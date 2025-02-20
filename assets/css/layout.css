@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+/** common **/
+body.open-panel {overflow:hidden; height:100%;}
+#content {min-height:500px;}
+.inner {max-width:1380px; width:100%; margin:0 auto; padding:0 90px;}
+.mobile-show {display:none;}
+.mo-only {display:none !important;} 
+.pc-only {display:block !important;}
+
+@media screen and (max-width:1024px) {
+    .mobile-hide {display:none;}
+    .mobile-show {display:block;}
+    .mo-only {display:block !important;} 
+    .pc-only {display:none !important;} 
+}
+@media screen and (max-width:767px) {
+    body {font-size:15px;} 
+    .inner {padding:0 20px;}
+}
+
+/** Header **/
+#header {width:100%; height:75px; padding:0 20px; border-bottom:1px solid #d2d2d2; background:#fff;}
+
+.header-wrap {display:flex; align-items:center; max-width:1400px; width:100%; margin:0 auto;}
+.header-wrap .logo {width:297px; height:45px; margin-right:100px;} 
+.header-wrap .logo a {display:block; width:100%; height:100%; background-image:url(../img/common/logo.svg); background-repeat:no-repeat; background-position:center; background-size:contain;} 
+.header-wrap .util {position:relative; margin-left:auto;}
+.header-wrap .util .user-btn {display:flex; align-items:center; font-size:18px; color:#979797;}
+.header-wrap .util .user-btn::after {content:''; display:inline-block; width:30px; height:30px; margin-left:8px; background-image:url(../img/common/ico_member.svg); background-repeat:no-repeat; background-position:center; background-size:cover;}
+.header-wrap .util .user-btn.on {color:#333;}
+.header-wrap .util .user-btn.on::after {background-image:url(../img/common/ico_member_on.svg);}
+.header-wrap .util .user-btn.on span {margin-right:5px;}
+.header-wrap .util .user-menu {display:none; position:absolute; top:50px; right:0; z-index:100; width:150px; padding:10px 15px; border:1px solid #ececec; background:#fff; box-shadow:0 3px 6px 0 rgba(0,0,0,.16);}
+.header-wrap .util .user-menu ul li + li {border-top:1px solid #e6e6e6;}
+.header-wrap .util .user-menu ul li a {display:flex; align-items:center; padding:5px 0;}
+.header-wrap .util .user-menu ul li a img {margin-right:5px;}
+
+/** GNB **/
+#gnb ul {display:flex; align-items:center;}
+#gnb ul li {position:relative;}
+#gnb ul li + li::before {content:''; position:absolute; top:calc(50% - 1px); left:0; width:2px; height:2px; border-radius:50%; background:#333;} 
+#gnb ul li a {display:block; margin:0 20px; font-weight:600; font-size:20px; line-height:75px; text-align:center;}
+#gnb ul li a span {padding:10px 20px;}
+#gnb ul li.on a span {border-radius:25px; background:var(--point-color); font-weight:bold; color:#fff;}
+
+/** Footer **/
+#footer {padding:40px 20px 60px; background:var(--base-color);}
+#footer .footer-wrap {max-width:1400px; width:100%; margin:0 auto;}
+#footer .footer-top {display:flex; align-items:center; justify-content:space-between; margin-bottom:20px;}
+#footer .footer-top [class*='footer-'] {display:flex; flex-wrap:wrap;}
+#footer .footer-top [class*='footer-'] li a {color:#fff;}
+#footer .footer-nav li + li::before {content:''; display:inline-block; width:1px; height:10px; margin:0 10px; background:#828282;}
+#footer .footer-link li:not(:last-child) {margin-right:40px;}
+#footer .footer-link li [class*='ico-'] {display:block;}
+#footer .footer-link li [class*='ico-']::before {content:''; display:inline-block; width:44px; height:44px; margin-right:5px; background-repeat:no-repeat; background-position:center; background-size:cover; vertical-align:middle;}
+#footer .footer-link li .ico-shark::before {background-image:url(../img/common/ico_shark.svg);}
+#footer .footer-link li .ico-youtube::before {background-image:url(../img/common/ico_youtube.svg);}
+#footer .footer-link li span {border-bottom:1px solid #fff;}
+#footer .footer-info {line-height:2; color:#cdcdcd;}
+#footer .footer-info .info-list {display:flex; flex-wrap:wrap;}
+#footer .footer-info .info-list li + li::before {content:''; display:inline-block; width:1px; height:10px; margin:0 10px; background:#828282;}
+
+/** Panel **/
+#panel {visibility:hidden; position:fixed; top:0; left:0; z-index:1001; width:100%; height:100%; transition:all .3s;}
+.panel-wrap {position:absolute; top:0; bottom:0; right:-500px; z-index:100; width:500px; height:100%; background:#fff; transition:all .3s;}
+.panel-top {display:flex; align-items:center; justify-content:space-between; height:60px; padding:0 40px; border-bottom:1px solid var(--base-color);}
+.panel-top .tab-btn {display:flex;}
+.panel-top .tab-btn a {font-weight:bold; font-size:18px; color:#9a9a9a;}
+.panel-top .tab-btn a + a {margin-left:15px;}
+.panel-top .tab-btn a.active {color:var(--base-color);}
+.panel-top .panel-close {display:block; position:relative; width:26px; height:26px; font-size:0;}
+.panel-top .panel-close::before,
+.panel-top .panel-close::after {content:''; display:block; position:absolute; top:calc(50% - 13px); left:50%; width:3px; height:26px; background:#505050;}
+.panel-top .panel-close::before {transform:rotate(45deg);}
+.panel-top .panel-close::after {transform:rotate(-45deg);}
+.panel {display:none; height:calc(100% - 60px);}
+.panel.active {display:block;}
+.panel-cont {overflow-y:auto; height:100%;}
+.panel-cont .cont-head {display:flex; align-items:center; height:60px; padding:0 40px; border-bottom:1px solid #dbdbdb;}
+.panel-cont .cont-head .tab-wrap {display:flex;}
+.panel-cont .cont-head .tab-wrap a {width:80px; height:35px; border-radius:17px; border:1px solid var(--base-color); font-weight:bold; line-height:35px; text-align:center;}
+.panel-cont .cont-head .tab-wrap a + a {margin-left:10px;}
+.panel-cont .cont-head .tab-wrap a.on {background:var(--base-color); color:#fff;}
+.panel-cont .cont-head .tit {font-weight:bold; font-size:18px;}
+.panel-cont .cont-head .tit .step {margin-left:8px; font-weight:normal; font-size:14px; color:#979797;}
+.panel-cont .cont-body {padding:40px;}
+.panel-cont .cont-foot {padding:40px;}
+.panel-cont .cont-foot .txt-wrap {margin-bottom:20px; color:#9a9a9a;}
+.panel-cont .cont-foot .txt-wrap:last-child {margin-bottom:0;}
+.panel-cont .cont-foot .txt-wrap p {font-size:14px;}
+.panel-cont .cont-foot .txt-wrap p + p {margin-top:10px;}
+
+#panel.on {visibility:visible; background:rgba(0,0,0,.3);}
+#panel.on .panel-wrap {right:0;}
+
+
+/** 1400px 시작 **/
+@media screen and (max-width:1400px) {
+    /** Header **/
+    .header-wrap {justify-content:space-between;}
+    .header-wrap .logo {width:43px; height:55px; margin:0;} 
+    .header-wrap .logo a {background-image:url(../img/common/logo_m.svg);}
+    .header-wrap .util {margin:0;}
+}
+/** 1400px 끝 **/
+
+/** 1024px 시작 **/
+@media screen and (max-width:1024px) {
+    /** Header **/
+    .header-wrap .util .user-btn {font-size:16px;}
+
+    /** GNB **/
+    #gnb ul li a {margin:0 10px; font-size:18px;}
+    #gnb ul li a span {padding:10px 15px;}
+}
+/** 1024px 끝 **/
+
+/** 767px 시작 **/
+@media screen and (max-width:767px) {
+    /** Header **/
+    #header {height:60px;}
+    .header-wrap .logo {flex:0 0 auto; width:30px; height:38px;}
+    .header-wrap .util .user-btn {font-size:0;} 
+    .header-wrap .util .user-btn::after {width:25px; height:25px; margin:0;}
+    .header-wrap .util .user-menu {top:40px; width:130px;}
+    .header-wrap .util .user-menu ul li a {font-size:13px;}
+
+    /** GNB **/
+    #gnb {overflow-x:auto; width:271px; margin:0 10px; white-space:nowrap;}
+    #gnb ul {height:60px;}
+    #gnb ul li a {font-size:14px; line-height:normal;}
+    #gnb ul li a span {padding:0;}
+    #gnb ul li.on a span {background:transparent; color:var(--point-color);}
+
+    /** Footer **/
+    #footer {padding:30px 20px; font-size:13px;}
+    #footer .footer-top {flex-direction:column-reverse; align-items:baseline;}
+    #footer .footer-link {margin-bottom:5px;}
+    #footer .footer-link li:not(:last-child) {margin-right:20px;} 
+    #footer .footer-link li [class*='ico-']::before {width:30px; height:30px;}
+}
+/** 767px 끝 **/
+
+/** 500px 시작 **/
+@media screen and (max-width:500px) {
+    /** Panel **/
+    .panel-wrap {right:-100%; width:100%;}
+    .panel-top,
+    .panel-cont .cont-head {padding:0 20px;}
+    .panel-cont .cont-head .tit {font-size:16px;}
+    .panel-cont .cont-body,
+    .panel-cont .cont-foot {padding:30px 20px;}
+}
+/** 500px 끝 **/
+
+/** 480px 시작 **/
+@media screen and (max-width:480px) {
+    /** Footer **/
+    #footer .footer-info .info-list {flex-direction:column;}
+    #footer .footer-info .info-list li + li::before {content:none;}
+}
+/** 480px 끝 **/

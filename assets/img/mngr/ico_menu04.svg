@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="그룹_1218" data-name="그룹 1218" transform="translate(-26 -196)">
+    <g id="description_black_24dp" transform="translate(29.201 198.173)">
+      <path id="패스_22" data-name="패스 22" d="M0,0H17.6V17.6H0Z" fill="none"/>
+      <path id="패스_23" data-name="패스 23" d="M11.332,2H5.466A1.465,1.465,0,0,0,4.007,3.466L4,15.2a1.465,1.465,0,0,0,1.459,1.466h8.806A1.471,1.471,0,0,0,15.732,15.2V6.4ZM12.8,13.732H6.933V12.265H12.8Zm0-2.933H6.933V9.332H12.8ZM10.6,7.133V3.1l4.033,4.033Z" transform="translate(-1.067 -0.534)" fill="#041231"/>
+    </g>
+    <rect id="사각형_591" data-name="사각형 591" width="24" height="24" transform="translate(26 196)" fill="rgba(255,255,255,0)"/>
+  </g>
+</svg>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
+    <title>대치상어수학 > 회원정보 변경</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/img/common/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/remixicon.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/jquery.mCustomScrollbar.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/swiper.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/default.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/sub.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/modal.css" />
+    <script type="text/javascript" src="../../assets/js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/swiper.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/common.js"></script>
+    <!-- ie css 변수적용 -->
+    <script type="text/javascript" src="https://unpkg.com/css-vars-ponyfill@2/dist/css-vars-ponyfill.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- s : header -->
+        <header id="header">
+            <div class="header-wrap">
+                <h1 class="logo">
+                    <a href="../main/index.html"><span class="blind">대치상어수학 ONLINE</span></a>
+                </h1>
+                <nav id="gnb">
+                    <ul>
+                        <li><a href="../evaluation/feature.html"><span>진단평가</span></a></li>
+                        <li><a href="../mockTest/feature.html"><span>모의고사</span></a></li>
+                        <li><a href="../presentation/presentation.html"><span>설명회</span></a></li>
+                        <li><a href=""><span>학원 블로그</span></a></li>
+                    </ul>
+                </nav>
+                <div class="util">
+                    <a href="#" class="user-btn on"><span class="cl-blue t-line">학생</span> 님</a>
+                    <div class="user-menu">  
+                        <ul> 
+                            <li><a href="../member/learningInfo.html"><img src="../../assets/img/common/ico_book.svg" alt="" />학습정보</a></li>
+                            <li><a href="../member/stuChangeInfo.html"><img src="../../assets/img/common/ico_user.svg" alt="" />회원정보 변경</a></li>
+                            <li><a href="../member/stuInquiry.html"><img src="../../assets/img/common/ico_chat.svg" alt="" />1:1문의</a></li>
+                            <li><a href="../main/index.html"><img src="../../assets/img/common/ico_signout.svg" alt="" />로그아웃</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- e : header -->
+
+        <!-- s : container -->
+        <main id="container">
+            <div class="sub-nav">
+                <ul>
+                    <li><a href="../member/learningInfo.html">학습정보</a></li>
+                    <li class="on"><a href="../member/stuChangeInfo.html">회원정보 변경</a></li>
+                    <li><a href="../member/stuInquiry.html">1:1 문의</a></li>
+                </ul>
+            </div>
+            <div id="content" class="sub-cont">
+                <div class="change-info">
+                    <div class="inner">
+                        <div class="sub-title mb-0">
+                            <h2 class="tit">학생 정보</h2>
+                        </div>
+                        <div class="basic-form type-02">
+                            <div class="form-item">
+                                <dl>
+                                    <dt>이름</dt>
+                                    <dd>
+                                        <input type="text" class="form-input-04" value="김상어" title="이름" />
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>아이디</dt>
+                                    <dd>
+                                        <input type="text" class="form-input-04" value="Sharkmath" title="아이디" disabled />
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>학교명</dt>
+                                    <dd>
+                                        <input type="text" class="form-input-04" value="대치상어" title="학교명" />
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>학년</dt>
+                                    <dd>
+                                        <select class="h-30" title="학년 선택">
+                                            <option value="">선택</option>
+                                            <option value="">1학년</option>
+                                            <option value="">2학년</option>
+                                            <option value="" selected>3학년</option>
+                                            <option value="">4학년</option>
+                                            <option value="">5학년</option>
+                                            <option value="">6학년</option>
+                                        </select>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="form-item">
+                                <dl>
+                                    <dt>현재 비밀번호</dt>
+                                    <dd>
+                                        <input type="password" class="form-input-04" title="현재 비밀번호" />
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>새 비밀번호</dt>
+                                    <dd>
+                                        <input type="password" class="form-input-04" placeholder="8자리 입력" title="새 비밀번호" />
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>새 비밀번호 확인</dt>
+                                    <dd>
+                                        <input type="password" class="form-input-04" placeholder="8자리 입력" title="새 비밀번호 확인" />
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn blue w-full mt-50">변경된 정보 저장</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- e : container -->
+
+        <!-- s : footer -->
+        <footer id="footer">
+            <div class="footer-wrap">
+                <div class="footer-top">
+                    <ul class="footer-nav">
+                        <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#policy">개인정보처리방침</a></li>
+                        <li><a href="">이용약관</a></li>
+                        <li><a href="">마케팅수신동의</a></li>
+                    </ul>
+                    <ul class="footer-link">
+                        <li><a href="https://www.sharkmath.co.kr/" target="_blank" class="ico-shark" title="대치상어수학 홈페이지 새창 열림"><span>대치상어수학 홈페이지</span></a></li>
+                        <li><a href="" target="_blank" class="ico-youtube" title="유튜브 새창 열림"><span>유튜브 바로가기</span></a></li>
+                    </ul>
+                </div>
+                <div class="footer-info">
+                    <p class="address">서울시 강남구 삼성로 155 대치퍼스트빌딩 4층 (06291)</p>
+                    <ul class="info-list">
+                        <li>대표 : 나영환</li>
+                        <li>사업자등록번호 : 170-93-01557</li>
+                        <li>대표번호 : 02-554-0222</li>
+                    </ul>
+                    <p class="copyright">Copyright © Daechi Sharkmath All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <!-- e : footer -->
+
+        <!-- s : panel -->
+        <div id="panel"></div>
+        <!-- e : panel -->
+    </div>
+</body>
+</html>

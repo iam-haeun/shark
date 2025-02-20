@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
+    <title>대치상어수학 > 회원정보 변경</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/img/common/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/remixicon.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/jquery.mCustomScrollbar.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/swiper.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/default.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/sub.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/modal.css" />
+    <script type="text/javascript" src="../../assets/js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/swiper.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/common.js"></script>
+    <!-- ie css 변수적용 -->
+    <script type="text/javascript" src="https://unpkg.com/css-vars-ponyfill@2/dist/css-vars-ponyfill.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- s : header -->
+        <header id="header">
+            <div class="header-wrap">
+                <h1 class="logo">
+                    <a href="../main/index.html"><span class="blind">대치상어수학 ONLINE</span></a>
+                </h1>
+                <nav id="gnb">
+                    <ul>
+                        <li><a href="../evaluation/feature.html"><span>진단평가</span></a></li>
+                        <li><a href="../mockTest/feature.html"><span>모의고사</span></a></li>
+                        <li><a href="../presentation/presentation.html"><span>설명회</span></a></li>
+                        <li><a href=""><span>학원 블로그</span></a></li>
+                    </ul>
+                </nav>
+                <div class="util">
+                    <a href="#" class="user-btn on"><span class="cl-blue t-line">학부모</span> 님</a>
+                    <div class="user-menu">  
+                        <ul> 
+                            <li><a href="../member/learningStatus.html"><img src="../../assets/img/common/ico_book.svg" alt="" />학습현황</a></li>
+                            <li><a href="../member/paymentDelivery.html"><img src="../../assets/img/common/ico_cart.svg" alt="" />결제/배송</a></li>
+                            <li><a href="../member/changeInfo.html"><img src="../../assets/img/common/ico_user.svg" alt="" />회원정보 변경</a></li>
+                            <li><a href="../member/inquiry.html"><img src="../../assets/img/common/ico_chat.svg" alt="" />1:1문의</a></li>
+                            <li><a href="../main/index.html"><img src="../../assets/img/common/ico_signout.svg" alt="" />로그아웃</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- e : header -->
+
+        <!-- s : container -->
+        <main id="container">
+            <div class="sub-nav">
+                <ul>
+                    <li><a href="../member/learningStatus.html">학습현황</a></li>
+                    <li><a href="../member/paymentDelivery.html">결제/배송</a></li>
+                    <li class="on"><a href="../member/changeInfo.html">회원정보 변경</a></li>
+                    <li><a href="../member/inquiry.html">1:1 문의</a></li>
+                </ul>
+            </div>
+            <div id="content" class="sub-cont">
+                <div class="change-info">
+                    <div class="inner">
+                        <div class="cont-box">
+                            <div class="sub-title mb-0">
+                                <h2 class="tit">학부모 정보</h2>
+                                <button type="button" class="btn-arrow" data-bs-toggle="modal" data-bs-target="#modifyInfo">정보 수정</button>
+                            </div>
+                            <div class="basic-form type-02">
+                                <div class="form-item">
+                                    <dl>
+                                        <dt>이름</dt>
+                                        <dd>김상어</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>아이디</dt>
+                                        <dd>Sharkmath</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>비밀번호</dt>
+                                        <dd>********</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>연락처</dt>
+                                        <dd>010-0000-0000</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>이메일</dt>
+                                        <dd>shark@example.com</dd>
+                                    </dl>
+                                </div>
+                                <div class="form-item">
+                                    <dl>
+                                        <dt>수령인</dt>
+                                        <dd>김상어</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>연락처</dt>
+                                        <dd>010-0000-0000</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>주소</dt>
+                                        <dd>서울특별시 강남구대 동 507-2 409호 대치상어수학학원</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cont-box">
+                            <div class="sub-title mb-0">
+                                <h2 class="tit">자녀1 정보</h2>
+                            </div>
+                            <div class="basic-form type-02">
+                                <div class="form-item">
+                                    <dl>
+                                        <dt>이름</dt>
+                                        <dd>김상어</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>아이디</dt>
+                                        <dd>Sharkmath</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>새 비밀번호</dt>
+                                        <dd>
+                                            <input type="password" class="form-input-03" placeholder="8자리 입력" title="새 비밀번호" />
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>새 비밀번호 확인</dt>
+                                        <dd>
+                                            <input type="password" class="form-input-03" placeholder="8자리 입력" title="새 비밀번호 확인" />
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cont-box">
+                            <div class="sub-title mb-0">
+                                <h2 class="tit">자녀2 정보</h2>
+                            </div>
+                            <div class="basic-form type-02">
+                                <div class="form-item">
+                                    <dl>
+                                        <dt>이름</dt>
+                                        <dd>김상어</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>아이디</dt>
+                                        <dd>Sharkmath</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>새 비밀번호</dt>
+                                        <dd>
+                                            <input type="password" class="form-input-03" placeholder="8자리 입력" title="새 비밀번호" />
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>새 비밀번호 확인</dt>
+                                        <dd>
+                                            <input type="password" class="form-input-03" placeholder="8자리 입력" title="새 비밀번호 확인" />
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cont-box">
+                            <div class="ta-r mb-40">
+                                <button type="button" class="btn-add" data-bs-toggle="modal" data-bs-target="#addChild">자녀 추가 등록</button>
+                            </div>
+                            <button type="submit" class="btn blue w-full">회원정보 수정</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- e : container -->
+
+        <!-- s : footer -->
+        <footer id="footer">
+            <div class="footer-wrap">
+                <div class="footer-top">
+                    <ul class="footer-nav">
+                        <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#policy">개인정보처리방침</a></li>
+                        <li><a href="">이용약관</a></li>
+                        <li><a href="">마케팅수신동의</a></li>
+                    </ul>
+                    <ul class="footer-link">
+                        <li><a href="https://www.sharkmath.co.kr/" target="_blank" class="ico-shark" title="대치상어수학 홈페이지 새창 열림"><span>대치상어수학 홈페이지</span></a></li>
+                        <li><a href="" target="_blank" class="ico-youtube" title="유튜브 새창 열림"><span>유튜브 바로가기</span></a></li>
+                    </ul>
+                </div>
+                <div class="footer-info">
+                    <p class="address">서울시 강남구 삼성로 155 대치퍼스트빌딩 4층 (06291)</p>
+                    <ul class="info-list">
+                        <li>대표 : 나영환</li>
+                        <li>사업자등록번호 : 170-93-01557</li>
+                        <li>대표번호 : 02-554-0222</li>
+                    </ul>
+                    <p class="copyright">Copyright © Daechi Sharkmath All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <!-- e : footer -->
+
+        <!-- s : panel -->
+        <div id="panel"></div>
+        <!-- e : panel -->
+
+        <!-- s : 정보 수정 modal -->
+        <div class="modal fade" id="modifyInfo">
+            <div class="modal-dialog">
+                <!-- step01 -->
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">회원정보 확인</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+            
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="gray-box ta-c mb-40">정보를 안전하게 보호하기 위해<br>비밀번호를 다시 한번 입력해주세요.</div>
+                        <div class="basic-form type-02">
+                            <dl>
+                                <dt>이름</dt>
+                                <dd>김상어</dd>
+                            </dl>
+                            <dl>
+                                <dt>아이디</dt>
+                                <dd>Sharkmath</dd>
+                            </dl>
+                            <dl>
+                                <dt>비밀번호</dt>
+                                <dd>
+                                    <input type="password" class="form-input-04" title="비밀번호" />
+                                </dd>
+                            </dl>
+                        </div>
+                    </div><!-- /.modal-body -->
+            
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn blue" onclick="setModalNext(this);">확인</button>
+                    </div>
+                </div>
+
+                <!-- step02 -->
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">회원정보 수정</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+            
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="cont-wrap">
+                            <div class="basic-form type-02 mb-20">
+                                <h3>학부모 정보</h3>
+                                <dl>
+                                    <dt>이름</dt>
+                                    <dd>김상어</dd>
+                                </dl>
+                                <dl>
+                                    <dt>아이디</dt>
+                                    <dd>Sharkmath</dd>
+                                </dl>
+                                <dl>
+                                    <dt>연락처</dt>
+                                    <dd>
+                                        <div class="input-wrap">
+                                            <p>010-0000-0000</p>
+                                            <div class="btn-wrap">
+                                                <button type="button" class="btn basic btn-modify">수정</button>
+                                                <button type="button" class="btn outline btn-cancel" style="display:none;">취소</button>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="basic-form" style="display:none;">
+                                <p class="fs-14 cl-blue mb-10">*휴대폰 인증을 하셔야 변경하실 수 있습니다.</p>
+                                <dl>
+                                    <dt>학부모 휴대폰 번호 <span class="cl-red">*</span></dt>
+                                    <dd>
+                                        <div class="input-wrap">
+                                            <input type="tel" class="form-input-01" placeholder="'-'없이 숫자만 입력" title="학부모 휴대폰 번호" required />
+                                            <button type="button" class="btn basic">인증요청</button>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>인증번호 <span class="cl-red">*</span></dt>
+                                    <dd>
+                                        <div class="input-wrap">
+                                            <input type="text" class="form-input-01" placeholder="인증번호 입력" title="인증번호" required />
+                                            <button type="button" class="btn basic" disabled>인증확인</button>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="cont-wrap">
+                            <div class="basic-form type-02 mb-20">
+                                <dl>
+                                    <dt>주소</dt>
+                                    <dd>
+                                        <p>서울특별시 강남구대 동 507-2 409호 대치상어수학학원</p>
+                                        <div class="btn-wrap fx-je mt-5">
+                                            <button type="button" class="btn basic btn-modify">수정</button>
+                                            <button type="button" class="btn outline btn-cancel" style="display:none;">취소</button>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="basic-form" style="display:none;">
+                                <p class="fs-14 cl-blue mb-10">*변경할 주소지 정보를 입력하세요.</p>
+                                <dl>
+                                    <dt>배송지 주소</dt>
+                                    <dd>
+                                        <div class="search mb-10">
+                                            <input type="text" class="search-input" placeholder="도로명, 건물명 또는 지번으로 검색" title="주소 검색">
+                                            <button type="button" class="search-btn" title="검색"><span class="blind">검색</span></button>
+                                        </div>
+                                        <input type="text" class="form-input-02" placeholder="상세 주소" title="상세 주소" />
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="cont-wrap">
+                            <div class="basic-form type-02">
+                                <dl>
+                                    <dt>현재 비밀번호</dt>
+                                    <dd>
+                                        <input type="password" class="form-input-04" title="현재 비밀번호" />
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>새 비밀번호</dt>
+                                    <dd>
+                                        <input type="password" class="form-input-04" title="새 비밀번호" />
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>새 비밀번호 확인</dt>
+                                    <dd>
+                                        <input type="password" class="form-input-04" title="새 비밀번호 확인" />
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div><!-- /.modal-body -->
+            
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn blue" data-bs-dismiss="modal">회원정보 수정</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- e : 정보 수정 modal -->
+
+        <!-- s : 자녀 추가 등록 modal -->
+        <div class="modal fade" id="addChild">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">자녀(학생)등록</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+            
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="txt-wrap mb-40">
+                            <p class="cl-blue">※ 주의사항</p>
+                            <p class="cl-blue">01. 생성한 자녀 계정으로 시험과 수강 등의 학습을 진행합니다.</p>
+                            <p class="cl-blue">02. 다자녀 등록은 아래 +자녀 추가 등록을 클릭하면 추가 등록을 하실 수 있습니다.</p>
+                        </div>
+                        <div class="basic-form">
+                            <p class="tit"><span class="cl-red">*</span> 필수 입력 사항</p>
+                            <dl>
+                                <dt>자녀 이름 <span class="cl-red">*</span></dt>
+                                <dd>
+                                    <input type="text" class="form-input-01" placeholder="한글만 입력 가능" title="자녀 이름" required />
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>자녀 아이디 <span class="cl-red">*</span></dt>
+                                <dd>
+                                    <div class="input-wrap">
+                                        <input type="text" class="form-input-01" placeholder="영문 또는 영문+숫자조합으로 6~13자리" title="자녀 아이디" required />
+                                        <button type="button" class="btn basic">중복확인</button>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>비밀번호 <span class="cl-red">*</span></dt>
+                                <dd>
+                                    <input type="text" class="form-input-01" placeholder="영문, 숫자, 특수문자 2가지 조합으로 10~13자리" title="비밀번호" required />
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>비밀번호 확인 <span class="cl-red">*</span></dt>
+                                <dd>
+                                    <input type="text" class="form-input-01" placeholder="영문, 숫자, 특수문자 2가지 조합으로 10~13자리" title="비밀번호 확인" required />
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>자녀 생년월일 <span class="cl-red">*</span></dt>
+                                <dd>
+                                    <input type="text" class="form-input-01" placeholder="생년월일 8자리 입력 (YYYY - MM - DD)" title="자녀 생년월일" required />
+                                </dd>
+                            </dl>
+                            <div class="form-group">
+                                <dl class="col-2">
+                                    <dt>지역 <span class="cl-red">*</span></dt>
+                                    <dd>
+                                        <select title="지역 선택" required>
+                                            <option value="">선택</option>
+                                            <option value="">서울</option>
+                                            <option value="">대전</option>
+                                            <option value="">대구</option>
+                                            <option value="">부산</option>
+                                        </select>
+                                    </dd>
+                                </dl>
+                                <dl class="col-2">
+                                    <dt>학년 <span class="cl-red">*</span></dt>
+                                    <dd>
+                                        <select title="학년 선택" required>
+                                            <option value="">선택</option>
+                                            <option value="">1학년</option>
+                                            <option value="">2학년</option>
+                                            <option value="">3학년</option>
+                                            <option value="">4학년</option>
+                                            <option value="">5학년</option>
+                                            <option value="">6학년</option>
+                                        </select>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <dl>
+                                <dt>학교 이름 <span class="cl-red">*</span></dt>
+                                <dd>
+                                    <div class="input-wrap">
+                                        <div class="col-2 mr-10">
+                                            <input type="text" class="form-input-02" placeholder="학교 이름 입력" title="학교 이름" required />
+                                        </div>
+                                        <div class="col-2">
+                                            <select title="학교 선택" required>
+                                                <option value="">선택</option>
+                                                <option value="">초등학교</option>
+                                                <option value="">중학교</option>
+                                                <option value="">고등학교</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="mb-20">
+                                <dt>자녀 성별 <span class="cl-red">*</span></dt>
+                                <dd>
+                                    <ul class="custom-radio">
+                                        <li>
+                                            <input type="radio" name="modalGender01" id="modalMale01" required />
+                                            <label for="modalMale01">남</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="modalGender01" id="modalFemale01" required />
+                                            <label for="modalFemale01">여</label>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <div class="btn-wrap fx-je">
+                                <button type="button" class="btn-add" onclick="setModalAddRegister(this);">자녀 추가 등록</button>
+                                <button type="button" class="btn-delete" onclick="setDeleteRegister(this);" style="display:none;">추가 등록 삭제</button>
+                            </div>
+                        </div>
+                    </div><!-- /.modal-body -->
+            
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <div class="btn-wrap">
+                            <button type="button" class="btn wp-40" data-bs-dismiss="modal">이전</button>
+                            <button type="button" class="btn blue wp-60" data-bs-dismiss="modal">다음</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- e : 자녀 추가 등록 modal -->
+    </div>
+
+    <script>
+        $('.basic-form.type-02').each(function(){
+            var btnModify = $(this).find('.btn-modify');
+            var btnCancel = $(this).find('.btn-cancel');
+            var hideForm = $(this).next('.basic-form');
+
+            btnModify.on('click', function(){
+                btnModify.hide();
+                btnCancel.show();
+                hideForm.show();
+            });
+            btnCancel.on('click', function(){
+                btnModify.show();
+                btnCancel.hide();
+                hideForm.hide();
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="그룹_1216" data-name="그룹 1216" transform="translate(-26 -298)">
+    <g id="bar_chart_black_24dp" transform="translate(28 300)">
+      <g id="그룹_149" data-name="그룹 149">
+        <rect id="사각형_323" data-name="사각형 323" width="20" height="20" fill="none"/>
+      </g>
+      <g id="그룹_151" data-name="그룹 151" transform="translate(3.333 3.333)">
+        <g id="그룹_150" data-name="그룹 150">
+          <rect id="사각형_324" data-name="사각형 324" width="4" height="9" transform="translate(-0.333 4.667)" fill="#fff"/>
+          <rect id="사각형_325" data-name="사각형 325" width="4" height="6" transform="translate(9.667 7.667)" fill="#fff"/>
+          <rect id="사각형_326" data-name="사각형 326" width="3" height="14" transform="translate(5.667 -0.333)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+    <rect id="사각형_591" data-name="사각형 591" width="24" height="24" transform="translate(26 298)" fill="rgba(255,255,255,0)"/>
+  </g>
+</svg>

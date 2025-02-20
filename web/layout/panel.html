@@ -1,0 +1,775 @@
+<div class="panel-wrap">
+    <div class="panel-top">
+        <div class="tab-btn">
+            <a data-tab="tab-login" class="active" href="javascript:void(0);">로그인</a>
+            <a data-tab="tab-join" href="javascript:void(0);">회원가입</a>
+        </div>
+        <a href="#" class="panel-close">닫기</a>
+    </div>
+    <!-- 로그인 -->
+    <div class="panel tab-cont" id="tab-login">
+        <!-- 학생 로그인 -->
+        <div class="panel-cont" id="tab-student">
+            <div class="cont-head">
+                <div class="tab-wrap">
+                    <a href="javascript:void(0);" data-tab="tab-student" class="on">학생</a>
+                    <a href="javascript:void(0);" data-tab="tab-parent">학부모</a>
+                </div>
+            </div>
+            <div class="cont-body">
+                <div class="basic-form">
+                    <dl>
+                        <dt>아이디</dt>
+                        <dd>
+                            <input type="text" class="form-input-01" placeholder="아이디를 입력하세요" title="아이디" required />
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>비밀번호</dt>
+                        <dd>
+                            <div class="pw-input">
+                                <input type="password" class="form-input-01" placeholder="비밀번호를 입력하세요" title="비밀번호" required />
+                                <i class="ri-eye-line"></i>
+                            </div>
+                            <div class="link">
+                                <a href="#" onclick="setFindPw(this);">비밀번호 찾기</a>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="cont-foot">
+                <button type="submit" class="btn blue w-full mb-15" onclick="location.href='../member/learningInfo.html';">학생 로그인</button>
+                <div class="txt-wrap">
+                    <p class="cl-blue ml-50"><i class="ri-check-line mr-5"></i>학생 로그인 : 진단평가 및 모의고사 수강</p>
+                    <p class="cl-blue ml-50"><i class="ri-check-line mr-5"></i>학부모 로그인 : 진단평가&모의고사 신청 및 결제</p>
+                </div>
+                <div class="txt-wrap">
+                    <p>01. 대치상어수학 온라인 서비스는 pc의 경우 최신 크롬 브라우저 환경에서
+                        최적화 되어있습니다. 태블릿의 경우 아이패드는 사파리 브라우저,
+                        안드로이드 단말의 경우는 크롬 브라우저 환경에서 이용 부탁드립니다.</p>
+                    <p>02. 사용할 계정(ID/PW) 회원가입 및 로그인해주세요.</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- 학부모 로그인 -->
+        <div class="panel-cont" id="tab-parent" style="display:none;">
+            <div class="cont-head">
+                <div class="tab-wrap">
+                    <a href="javascript:void(0);" data-tab="tab-student">학생</a>
+                    <a href="javascript:void(0);" data-tab="tab-parent" class="on">학부모</a>
+                </div>
+            </div>
+            <div class="cont-body">
+                <div class="basic-form">
+                    <dl>
+                        <dt>아이디</dt>
+                        <dd>
+                            <input type="text" class="form-input-01" placeholder="아이디를 입력하세요" title="아이디" required />
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>비밀번호</dt>
+                        <dd>
+                            <div class="pw-input">
+                                <input type="password" class="form-input-01" placeholder="비밀번호를 입력하세요" title="비밀번호" required />
+                                <i class="ri-eye-line"></i>
+                            </div>
+                            <div class="link">
+                                <a href="#" onclick="setFindId(this);">아이디 찾기</a>
+                                <a href="#" onclick="setFindPw(this);">비밀번호 찾기</a>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="cont-foot">
+                <button type="submit" class="btn blue w-full mb-15" onclick="location.href='../member/learningStatus.html';">학부모 로그인</button>
+                <button type="button" class="btn outline blue w-full mb-15" onclick="setJoin(this);">회원가입</button>
+                <div class="txt-wrap">
+                    <p class="cl-blue ml-50"><i class="ri-check-line mr-5"></i>학생 로그인 : 진단평가 및 모의고사 수강</p>
+                    <p class="cl-blue ml-50"><i class="ri-check-line mr-5"></i>학부모 로그인 : 진단평가&모의고사 신청 및 결제</p>
+                </div>
+                <div class="txt-wrap">
+                    <p>01. 대치상어수학 온라인 서비스는 pc의 경우 최신 크롬 브라우저 환경에서
+                        최적화 되어있습니다. 태블릿의 경우 아이패드는 사파리 브라우저,
+                        안드로이드 단말의 경우는 크롬 브라우저 환경에서 이용 부탁드립니다.</p>
+                    <p>02. 사용할 계정(ID/PW) 회원가입 및 로그인해주세요.</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- 아이디 찾기 -->
+        <div class="panel-cont find-id" style="display:none;">
+            <div class="cont-head">
+                <h2 class="tit">아이디 찾기</h2>
+            </div>
+            <div class="cont-body">
+                <div class="basic-form">
+                    <p class="mb-50 cl-blue ta-c">가입시 입력한 학부모 이름과 핸드폰 번호를 입력해주세요.</p>
+                    <dl>
+                        <dt>학부모 이름</dt>
+                        <dd>
+                            <input type="text" class="form-input-01" placeholder="한글만 입력 가능" title="학부모 이름" />
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>휴대폰 번호</dt>
+                        <dd>
+                            <div class="input-wrap">
+                                <input type="tel" class="form-input-01" placeholder="'-'없이 숫자만 입력" title="휴대폰 번호" />
+                                <button type="button" class="btn basic">인증요청</button>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>인증번호 <span class="cl-red">*</span></dt>
+                        <dd>
+                            <div class="input-wrap">
+                                <input type="number" class="form-input-01" placeholder="인증번호 입력" title="인증번호" required />
+                                <button type="button" class="btn basic" disabled>인증확인</button>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="cont-foot">
+                <div class="btn-wrap">
+                    <button type="button" class="btn wp-40" onclick="setTabParent(this);">이전</button>
+                    <button type="button" class="btn blue wp-60">다음</button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- 비밀번호 찾기 -->
+        <div class="panel-cont find-pw" style="display:none;">
+            <div class="cont-head">
+                <h2 class="tit">비밀번호 찾기</h2>
+            </div>
+            <div class="cont-body">
+                <div class="basic-form">
+                    <p class="mb-50 cl-blue ta-c">가입시 입력한 아이디와 핸드폰 번호를 입력해주세요.</p>
+                    <dl>
+                        <dt>아이디</dt>
+                        <dd>
+                            <input type="text" class="form-input-01" placeholder="아이디를 입력하세요" title="아이디" />
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>휴대폰 번호</dt>
+                        <dd>
+                            <div class="input-wrap">
+                                <input type="tel" class="form-input-01" placeholder="'-'없이 숫자만 입력" title="휴대폰 번호" />
+                                <button type="button" class="btn basic">인증요청</button>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>인증번호 <span class="cl-red">*</span></dt>
+                        <dd>
+                            <div class="input-wrap">
+                                <input type="number" class="form-input-01" placeholder="인증번호 입력" title="인증번호" required />
+                                <button type="button" class="btn basic" disabled>인증확인</button>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="cont-foot">
+                <div class="btn-wrap">
+                    <button type="button" class="btn wp-40" onclick="setTabStudent(this);">이전</button>
+                    <button type="button" class="btn blue wp-60" onclick="setResetPw(this);">다음</button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- 비밀번호 재설정 -->
+        <div class="panel-cont reset-pw" style="display:none;">
+            <div class="cont-head">
+                <h2 class="tit">비밀번호 재설정</h2>
+            </div>
+            <div class="cont-body">
+                <div class="basic-form type-02">
+                    <div class="form-item">
+                        <h3>학부모 정보</h3>
+                        <dl>
+                            <dt>이름</dt>
+                            <dd>김상어</dd>
+                        </dl>
+                        <dl>
+                            <dt>연락처</dt>
+                            <dd>010-0000-0000</dd>
+                        </dl>
+                        <dl>
+                            <dt>아이디</dt>
+                            <dd>Sharkmath</dd>
+                        </dl>
+                        <dl>
+                            <dt>현재 비밀번호</dt>
+                            <dd>
+                                <input type="password" class="form-input-03" title="현재 비밀번호" />
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>새 비밀번호</dt>
+                            <dd>
+                                <input type="password" class="form-input-03" placeholder="8자리 입력" title="새 비밀번호" />
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>새 비밀번호 확인</dt>
+                            <dd>
+                                <input type="password" class="form-input-03" title="새 비밀번호 확인" />
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="form-item">
+                        <h3>자녀 정보1</h3>
+                        <dl>
+                            <dt>이름</dt>
+                            <dd>김상우</dd>
+                        </dl>
+                        <dl>
+                            <dt>아이디</dt>
+                            <dd>SangWoo</dd>
+                        </dl>
+                        <dl>
+                            <dt>새 비밀번호</dt>
+                            <dd>
+                                <input type="password" class="form-input-03" placeholder="8자리 입력" title="새 비밀번호" />
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>새 비밀번호 확인</dt>
+                            <dd>
+                                <input type="password" class="form-input-03" title="새 비밀번호 확인" />
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="form-item">
+                        <h3>자녀 정보2</h3>
+                        <dl>
+                            <dt>이름</dt>
+                            <dd>김상운</dd>
+                        </dl>
+                        <dl>
+                            <dt>아이디</dt>
+                            <dd>SangWoon</dd>
+                        </dl>
+                        <dl>
+                            <dt>새 비밀번호</dt>
+                            <dd>
+                                <input type="password" class="form-input-03" placeholder="8자리 입력" title="새 비밀번호" />
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>새 비밀번호 확인</dt>
+                            <dd>
+                                <input type="password" class="form-input-03" title="새 비밀번호 확인" />
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="cont-foot">
+                <button type="submit" class="btn blue w-full">비밀번호 재설정 하기</button>
+            </div>
+        </div>
+    </div>
+    <!-- 회원가입 -->
+    <div class="panel tab-cont" id="tab-join">                
+        <!-- 회원가입 step01 -->
+        <div class="panel-cont">
+            <div class="cont-head">
+                <h2 class="tit">01. 회원정보 입력<span class="step">1/3</span></h2>
+            </div>
+            <div class="cont-body">
+                <div class="basic-form">
+                    <p class="tit"><span class="cl-red">*</span> 필수 입력 사항</p>
+                    <dl>
+                        <dt>학부모 이름 <span class="cl-red">*</span></dt>
+                        <dd>
+                            <input type="text" class="form-input-01" placeholder="한글만 입력 가능" title="학부모 이름" required />
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>학부모 아이디 <span class="cl-red">*</span></dt>
+                        <dd>
+                            <div class="input-wrap">
+                                <input type="text" class="form-input-01" placeholder="영문 또는 영문+숫자조합으로 6~13자리" title="학부모 아이디" required />
+                                <button type="button" class="btn basic">중복확인</button>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>비밀번호 <span class="cl-red">*</span></dt>
+                        <dd>
+                            <input type="text" class="form-input-01" placeholder="영문, 숫자, 특수문자 2가지 조합으로 10~13자리" title="비밀번호" required />
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>비밀번호 확인 <span class="cl-red">*</span></dt>
+                        <dd>
+                            <input type="text" class="form-input-01" placeholder="영문, 숫자, 특수문자 2가지 조합으로 10~13자리" title="비밀번호 확인" required />
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>학부모 생년월일 <span class="cl-red">*</span></dt>
+                        <dd>
+                            <input type="text" class="form-input-01" placeholder="생년월일 8자리 입력 (YYYY - MM - DD)" title="학부모 생년월일" required />
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="cont-foot">
+                <button type="button" class="btn blue w-full" onclick="setJoinNext(this);">다음</button>
+            </div>
+        </div>
+    
+        <!-- 회원가입 step02 -->
+        <div class="panel-cont" style="display:none;">
+            <div class="cont-head">
+                <h2 class="tit">01. 회원정보 입력<span class="step">2/3</span></h2>
+            </div>
+            <div class="cont-body">
+                <div class="basic-form">
+                    <p class="tit"><span class="cl-red">*</span> 필수 입력 사항</p>
+                    <dl>
+                        <dt>학부모 휴대폰 번호 <span class="cl-red">*</span></dt>
+                        <dd>
+                            <div class="input-wrap">
+                                <input type="tel" class="form-input-01" placeholder="'-'없이 숫자만 입력" title="학부모 휴대폰 번호" required />
+                                <button type="button" class="btn basic">인증요청</button>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>인증번호 <span class="cl-red">*</span></dt>
+                        <dd>
+                            <div class="input-wrap">
+                                <input type="text" class="form-input-01" placeholder="인증번호 입력" title="인증번호" required />
+                                <button type="button" class="btn basic" disabled>인증확인</button>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>소속 지점 <span class="cl-red">*</span></dt>
+                        <dd>
+                            <select title="소속 지점" required>
+                                <option value="">대치본점</option>
+                            </select>
+                            <p class="mt-10 fs-14 cl-blue">※ 학생(자녀)의 소속 지점을 선택해주세요.</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>학부모 성별 <span class="cl-red">*</span></dt>
+                        <dd>
+                            <ul class="custom-radio">
+                                <li>
+                                    <input type="radio" name="gender" id="male" required />
+                                    <label for="male">남</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="gender" id="female" required />
+                                    <label for="female">여</label>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>이메일 <span class="cl-red">*</span></dt>
+                        <dd>
+                            <div class="input-wrap">
+                                <input type="text" class="form-input-01" placeholder="아이디" title="이메일" required />
+                                <span class="ml-10 mr-10">@</span>
+                                <select title="이메일 선택">
+                                    <option value="">선택</option>
+                                    <option value="">naver.com</option>
+                                    <option value="">hanmail.net</option>
+                                    <option value="">gmail.com</option>
+                                    <option value="">nate.com</option>
+                                </select>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="cont-foot">
+                <div class="btn-wrap">
+                    <button type="button" class="btn wp-40" onclick="setJoinPrev(this);">이전</button>
+                    <button type="button" class="btn blue wp-60" onclick="setJoinNext(this);">다음</button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- 회원가입 step03 -->
+        <div class="panel-cont" style="display:none;">
+            <div class="cont-head">
+                <h2 class="tit">01. 회원정보 입력<span class="step">3/3</span></h2>
+            </div>
+            <div class="cont-body">
+                <div class="basic-form">
+                    <p class="tit">부가정보 입력</p>
+                    <dl>
+                        <dt>학원을 알게 된 경로를 선택해주세요. (중복선택 가능)</dt>
+                        <dd>
+                            <ul class="check-wrap">
+                                <li>
+                                    <strong>블로그</strong>
+                                    <div class="check-group">
+                                        <div class="check">
+                                            <input type="checkbox" name="blogCheck" id="blogCheck01" />
+                                            <label for="blogCheck01">학원 블로그</label>
+                                        </div>
+                                        <div class="check">
+                                            <input type="checkbox" name="blogCheck" id="blogCheck02" />
+                                            <label for="blogCheck02">그 외 블로그</label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>SNS</strong>
+                                    <div class="check-group">
+                                        <div class="check">
+                                            <input type="checkbox" name="snsCheck" id="snsCheck01" />
+                                            <label for="snsCheck01">카카오톡</label>
+                                        </div>
+                                        <div class="check">
+                                            <input type="checkbox" name="snsCheck" id="snsCheck02" />
+                                            <label for="snsCheck02">인스타그램</label>
+                                        </div>
+                                        <div class="check">
+                                            <input type="checkbox" name="snsCheck" id="snsCheck03" />
+                                            <label for="snsCheck03">페이스북</label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>검색 키워드</strong>
+                                    <div class="check-group">
+                                        <div class="check">
+                                            <input type="checkbox" name="keywordCheck" id="keywordCheck01" />
+                                            <label for="keywordCheck01">사고력 수학</label>
+                                        </div>
+                                        <div class="check">
+                                            <input type="checkbox" name="keywordCheck" id="keywordCheck02" />
+                                            <label for="keywordCheck02">생각하는 황소수학</label>
+                                        </div>
+                                        <div class="check">
+                                            <input type="checkbox" name="keywordCheck" id="keywordCheck03" />
+                                            <label for="keywordCheck03">원수학</label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>검색 사이트</strong>
+                                    <div class="check-group">
+                                        <div class="check">
+                                            <input type="checkbox" name="siteCheck" id="siteCheck01" />
+                                            <label for="siteCheck01">네이버</label>
+                                        </div>
+                                        <div class="check">
+                                            <input type="checkbox" name="siteCheck" id="siteCheck02" />
+                                            <label for="siteCheck02">다음</label>
+                                        </div>
+                                        <div class="check">
+                                            <input type="checkbox" name="siteCheck" id="siteCheck03" />
+                                            <label for="siteCheck03">구글</label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>그 외</strong>
+                                    <div class="check-group">
+                                        <div class="check">
+                                            <input type="checkbox" name="etcCheck" id="etcCheck01" />
+                                            <label for="etcCheck01">지인 소개</label>
+                                        </div>
+                                        <div class="check">
+                                            <input type="checkbox" name="etcCheck" id="etcCheck02" />
+                                            <label for="etcCheck02">광고&전단</label>
+                                        </div>
+                                        <div class="check">
+                                            <input type="checkbox" name="etcCheck" id="etcCheck03" />
+                                            <label for="etcCheck03">카페</label>
+                                        </div>
+                                        <div class="check">
+                                            <input type="checkbox" name="etcCheck" id="etcCheck04" />
+                                            <label for="etcCheck04">유튜브</label>
+                                        </div>
+                                        <div class="check w-full mb-0">
+                                            <input type="checkbox" name="etcCheck" id="etcCheck05" />
+                                            <label for="etcCheck05" class="w-full">
+                                                <input type="text" class="form-input-01" placeholder="기타(직접입력)" title="기타(직접입력)" />
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>주요 관심사항을 선택해주세요. (중복선택 가능)<p class="mt-5 fw-400 fs-14 cl-blue">※ 자녀(학생)에 맞는 진단&모의고사 상품 및 수업을 추천해드립니다.</p></dt>
+                        <dd>
+                            <div class="check-wrap">
+                                <div class="check">
+                                    <input type="checkbox" name="interestCheck" id="interestCheck01" />
+                                    <label for="interestCheck01">사고력 수학</label>
+                                </div>
+                                <div class="check">
+                                    <input type="checkbox" name="interestCheck" id="interestCheck02" />
+                                    <label for="interestCheck02">영재원 대비</label>
+                                </div>
+                                <div class="check">
+                                    <input type="checkbox" name="interestCheck" id="interestCheck03" />
+                                    <label for="interestCheck03">영재고&과학고 대비</label>
+                                </div>
+                                <div class="check">
+                                    <input type="checkbox" name="interestCheck" id="interestCheck04" />
+                                    <label for="interestCheck04">특정 학원(생각하는 황소수학, 원수학 등)</label>
+                                </div>
+                                <div class="check">
+                                    <input type="checkbox" name="interestCheck" id="interestCheck05" />
+                                    <label for="interestCheck05">입학&편입 대비</label>
+                                </div>
+                                <div class="check">
+                                    <input type="checkbox" name="interestCheck" id="interestCheck06" />
+                                    <label for="interestCheck06">선행 학습</label>
+                                </div>
+                                <div class="check">
+                                    <input type="checkbox" name="interestCheck" id="interestCheck07" />
+                                    <label for="interestCheck07">내 아이의 실력 점검 및 수준 확인</label>
+                                </div>
+                                <div class="check">
+                                    <input type="checkbox" name="interestCheck" id="interestCheck08" />
+                                    <label for="interestCheck08">교과 심화</label>
+                                </div>
+                                <div class="check w-full mb-0">
+                                    <input type="checkbox" name="interestCheck" id="interestCheck09" />
+                                    <label for="interestCheck09" class="w-full">
+                                        <input type="text" class="form-input-01" placeholder="기타(직접입력)" title="기타(직접입력)" />
+                                    </label>
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>약관 동의</dt>
+                        <dd>
+                            <div class="term-box">
+                                <div class="term-top">
+                                    <div class="check type-b">
+                                        <input type="checkbox" name="termCheck" id="termCheckAll" />
+                                        <label for="termCheckAll">약관 전체 동의</label>
+                                    </div>
+                                </div>
+                                <div class="term-cont">
+                                    <div class="check">
+                                        <input type="checkbox" name="termCheck" id="termCheck01" required />
+                                        <label for="termCheck01">대치상어수학 온라인 이용약관 <span class="cl-red">[필수]</span></label>
+                                    </div>
+                                    <div class="check">
+                                        <input type="checkbox" name="termCheck" id="termCheck02" required />
+                                        <label for="termCheck02">개인정보 수집 및 이용 <span class="cl-red">[필수]</span></label>
+                                    </div>
+                                    <div class="check">
+                                        <input type="checkbox" name="termCheck" id="termCheck03" />
+                                        <label for="termCheck03">개인정보 수집 및 이용 [선택]</label>
+                                    </div>
+                                    <div class="check">
+                                        <input type="checkbox" name="termCheck" id="termCheck04" />
+                                        <label for="termCheck04">마케팅 및 광고 활용 동의 [선택]</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="cont-foot">
+                <div class="btn-wrap">
+                    <button type="button" class="btn wp-40" onclick="setJoinPrev(this);">이전</button>
+                    <button type="button" class="btn blue wp-60" onclick="setJoinNext(this);">다음</button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- 회원가입 step04 -->
+        <div class="panel-cont" style="display:none;">
+            <div class="cont-head">
+                <h2 class="tit">02.자녀(학생)등록</h2>
+            </div>
+            <div class="cont-body">
+                <div class="txt-wrap mb-40">
+                    <p class="cl-blue">※ 주의사항</p>
+                    <p class="cl-blue">01. 생성한 자녀 계정으로 시험과 수강 등의 학습을 진행합니다.</p>
+                    <p class="cl-blue">02. 다자녀 등록은 아래 +자녀 추가 등록을 클릭하면 추가 등록을 하실 수 있습니다.</p>
+                </div>
+                <div class="basic-form">
+                    <p class="tit"><span class="cl-red">*</span> 필수 입력 사항</p>
+                    <dl>
+                        <dt>자녀 이름 <span class="cl-red">*</span></dt>
+                        <dd>
+                            <input type="text" class="form-input-01" placeholder="한글만 입력 가능" title="자녀 이름" required />
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>자녀 아이디 <span class="cl-red">*</span></dt>
+                        <dd>
+                            <div class="input-wrap">
+                                <input type="text" class="form-input-01" placeholder="영문 또는 영문+숫자조합으로 6~13자리" title="자녀 아이디" required />
+                                <button type="button" class="btn basic">중복확인</button>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>비밀번호 <span class="cl-red">*</span></dt>
+                        <dd>
+                            <input type="text" class="form-input-01" placeholder="영문, 숫자, 특수문자 2가지 조합으로 10~13자리" title="비밀번호" required />
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>비밀번호 확인 <span class="cl-red">*</span></dt>
+                        <dd>
+                            <input type="text" class="form-input-01" placeholder="영문, 숫자, 특수문자 2가지 조합으로 10~13자리" title="비밀번호 확인" required />
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>자녀 생년월일 <span class="cl-red">*</span></dt>
+                        <dd>
+                            <input type="text" class="form-input-01" placeholder="생년월일 8자리 입력 (YYYY - MM - DD)" title="자녀 생년월일" required />
+                        </dd>
+                    </dl>
+                    <div class="form-group">
+                        <dl class="col-2">
+                            <dt>지역 <span class="cl-red">*</span></dt>
+                            <dd>
+                                <select title="지역 선택" required>
+                                    <option value="">선택</option>
+                                    <option value="">서울</option>
+                                    <option value="">대전</option>
+                                    <option value="">대구</option>
+                                    <option value="">부산</option>
+                                </select>
+                            </dd>
+                        </dl>
+                        <dl class="col-2">
+                            <dt>학년 <span class="cl-red">*</span></dt>
+                            <dd>
+                                <select title="학년 선택" required>
+                                    <option value="">선택</option>
+                                    <option value="">1학년</option>
+                                    <option value="">2학년</option>
+                                    <option value="">3학년</option>
+                                    <option value="">4학년</option>
+                                    <option value="">5학년</option>
+                                    <option value="">6학년</option>
+                                </select>
+                            </dd>
+                        </dl>
+                    </div>
+                    <dl>
+                        <dt>학교 이름 <span class="cl-red">*</span></dt>
+                        <dd>
+                            <div class="input-wrap">
+                                <div class="col-2 mr-10">
+                                    <input type="text" class="form-input-02" placeholder="학교 이름 입력" title="학교 이름" required />
+                                </div>
+                                <div class="col-2">
+                                    <select title="학교 선택" required>
+                                        <option value="">선택</option>
+                                        <option value="">초등학교</option>
+                                        <option value="">중학교</option>
+                                        <option value="">고등학교</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl class="mb-20">
+                        <dt>자녀 성별 <span class="cl-red">*</span></dt>
+                        <dd>
+                            <ul class="custom-radio">
+                                <li>
+                                    <input type="radio" name="gender01" id="male01" required />
+                                    <label for="male01">남</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="gender01" id="female01" required />
+                                    <label for="female01">여</label>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <div class="btn-wrap fx-je">
+                        <button type="button" class="btn-add" onclick="setAddRegister(this);">자녀 추가 등록</button>
+                        <button type="button" class="btn-delete" onclick="setDeleteRegister(this);" style="display:none;">추가 등록 삭제</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cont-foot">
+                <div class="btn-wrap">
+                    <button type="button" class="btn wp-40" onclick="setJoinPrev(this);">이전</button>
+                    <button type="button" class="btn blue wp-60" onclick="setJoinNext(this);">다음</button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- 회원가입 완료 -->
+        <div class="panel-cont" style="display:none;">
+            <div class="cont-head">
+                <h2 class="tit">회원가입 완료</h2>
+            </div>
+            <div class="cont-body">
+                <img src="../../assets/img/common/ico_shark.svg" width="60" alt="" />
+                <div class="txt-wrap mt-20 mb-30">
+                    <p class="fs-18">환영합니다!<br>대한민국 수학 상위 3% 안에 들어가는</p>
+                    <p class="fs-20 fw-bold">대치상어수학 온라인</p>
+                </div>
+                <div class="basic-form type-02">
+                    <div class="form-item">
+                        <h3>학부모 정보</h3>
+                        <dl>
+                            <dt>이름</dt>
+                            <dd>김상어</dd>
+                        </dl>
+                        <dl>
+                            <dt>아이디</dt>
+                            <dd>Sharkmath</dd>
+                        </dl>
+                        <dl>
+                            <dt>연락처</dt>
+                            <dd>010-0000-0000</dd>
+                        </dl>
+                    </div>
+                    <div class="form-item">
+                        <h3>자녀 정보1</h3>
+                        <dl>
+                            <dt>이름</dt>
+                            <dd>김상우</dd>
+                        </dl>
+                        <dl>
+                            <dt>아이디</dt>
+                            <dd>SangWoo</dd>
+                        </dl>
+                    </div>
+                    <div class="form-item">
+                        <h3>자녀 정보2</h3>
+                        <dl>
+                            <dt>이름</dt>
+                            <dd>김상운</dd>
+                        </dl>
+                        <dl>
+                            <dt>아이디</dt>
+                            <dd>SangWoon</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="cont-foot">
+                <button type="button" class="btn blue w-full" onclick="location.href='../main/index.html';">메인으로 가기</button>
+            </div>
+        </div>
+    </div>
+</div>

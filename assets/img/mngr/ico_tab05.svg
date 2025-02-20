@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="그룹_1269" data-name="그룹 1269" transform="translate(-672.4 -244)">
+    <rect id="사각형_599" data-name="사각형 599" width="24" height="24" transform="translate(672.4 244)" fill="rgba(255,255,255,0)"/>
+    <g id="그룹_1266" data-name="그룹 1266" transform="translate(676.306 249.024)">
+      <g id="Icon_feather-monitor" data-name="Icon feather-monitor" transform="translate(0)">
+        <path id="패스_66" data-name="패스 66" d="M4.595,4.5H17.353a1.6,1.6,0,0,1,1.595,1.595v7.974a1.6,1.6,0,0,1-1.595,1.595H4.595A1.6,1.6,0,0,1,3,14.069V6.095A1.6,1.6,0,0,1,4.595,4.5Z" transform="translate(-3 -4.5)" fill="#afafaf"/>
+        <path id="패스_66_-_윤곽선" data-name="패스 66 - 윤곽선" d="M4.595,3.5H17.353a2.6,2.6,0,0,1,2.595,2.595v7.974a2.6,2.6,0,0,1-2.595,2.595H4.595A2.6,2.6,0,0,1,2,14.069V6.095A2.6,2.6,0,0,1,4.595,3.5ZM17.353,14.663a.6.6,0,0,0,.595-.595V6.095a.6.6,0,0,0-.595-.595H4.595A.6.6,0,0,0,4,6.095v7.974a.6.6,0,0,0,.595.595Z" transform="translate(-3 -4.5)" fill="#afafaf"/>
+        <path id="패스_67" data-name="패스 67" d="M12,31.5h6.379" transform="translate(-7.216 -17.147)" fill="#afafaf"/>
+        <path id="패스_67_-_윤곽선" data-name="패스 67 - 윤곽선" d="M18.379,32.5H12a1,1,0,1,1,0-2h6.379a1,1,0,0,1,0,2Z" transform="translate(-7.216 -17.147)" fill="#afafaf"/>
+        <path id="패스_68" data-name="패스 68" d="M18,25.5v3.19" transform="translate(-10.026 -14.337)" fill="#afafaf"/>
+        <path id="패스_68_-_윤곽선" data-name="패스 68 - 윤곽선" d="M18,29.69a1,1,0,0,1-1-1V25.5a1,1,0,0,1,2,0v3.19A1,1,0,0,1,18,29.69Z" transform="translate(-10.026 -14.337)" fill="#afafaf"/>
+      </g>
+      <path id="다각형_3" data-name="다각형 3" d="M3.168,1.248a1,1,0,0,1,1.664,0l2.131,3.2A1,1,0,0,1,6.131,6H1.869a1,1,0,0,1-.832-1.555Z" transform="translate(12.094 0.977) rotate(90)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

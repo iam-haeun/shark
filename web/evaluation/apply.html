@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
+    <title>대치상어수학 > 진단평가 > 진단평가 신청</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/img/common/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/remixicon.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/jquery.mCustomScrollbar.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/swiper.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/default.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/sub.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/modal.css" />
+    <script type="text/javascript" src="../../assets/js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/swiper.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/common.js"></script>
+    <!-- ie css 변수적용 -->
+    <script type="text/javascript" src="https://unpkg.com/css-vars-ponyfill@2/dist/css-vars-ponyfill.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- s : header -->
+        <header id="header">
+            <div class="header-wrap">
+                <h1 class="logo">
+                    <a href="../main/index.html"><span class="blind">대치상어수학 ONLINE</span></a>
+                </h1>
+                <nav id="gnb">
+                    <ul>
+                        <li class="on"><a href="../evaluation/feature.html"><span>진단평가</span></a></li>
+                        <li><a href="../mockTest/feature.html"><span>모의고사</span></a></li>
+                        <li><a href="../presentation/presentation.html"><span>설명회</span></a></li>
+                        <li><a href=""><span>학원 블로그</span></a></li>
+                    </ul>
+                </nav>
+                <div class="util">
+                    <a href="#" class="user-btn">내 계정</a>
+                </div>
+            </div>
+        </header>
+        <!-- e : header -->
+
+        <!-- s : container -->
+        <main id="container">
+            <div class="sub-nav">
+                <ul>
+                    <li><a href="../evaluation/feature.html">특징</a></li>
+                    <li class="on"><a href="../evaluation/apply.html">진단평가 신청</a></li>
+                    <li><a href="../evaluation/applyDetail.html">시험장</a></li>
+                </ul>
+            </div>
+            <div id="content" class="sub-cont apply">
+                <div class="inner">
+                    <div class="sub-title">
+                        <h2 class="tit">온라인 진단평가 <em class="cl-blue">신청</em></h2>
+                    </div>
+                    <div class="filter-wrap">
+                        <div class="filter">
+                            <div class="filter-item pl-0">
+                                <input type="radio" name="all" id="all01" checked />
+                                <label for="all01">전체</label>
+                            </div>
+                            <div class="filter-item">
+                                <input type="radio" name="all" id="all02" />
+                                <label for="all02">입학</label>
+                            </div>
+                            <div class="filter-item">
+                                <input type="radio" name="all" id="all03" />
+                                <label for="all03">진급별</label>
+                            </div>
+                        </div>
+                        <div class="filter">
+                            <strong>학년별</strong>
+                            <div class="filter-item">
+                                <input type="radio" name="schoolYear" id="schoolYearAll" checked />
+                                <label for="schoolYearAll">전체</label>
+                            </div>
+                            <div class="filter-item">
+                                <input type="radio" name="schoolYear" id="grade04" />
+                                <label for="grade04">4학년</label>
+                            </div>
+                            <div class="filter-item">
+                                <input type="radio" name="schoolYear" id="grade05" />
+                                <label for="grade05">5학년</label>
+                            </div>
+                            <div class="filter-item">
+                                <input type="radio" name="schoolYear" id="grade06" />
+                                <label for="grade06">6학년</label>
+                            </div>
+                        </div>
+                        <div class="filter">
+                            <strong>난이도별</strong>
+                            <div class="filter-item">
+                                <input type="radio" name="level" id="levelAll" checked />
+                                <label for="levelAll">전체</label>
+                            </div>
+                            <div class="filter-item">
+                                <input type="radio" name="level" id="level01" />
+                                <label for="level01">상위 3%</label>
+                            </div>
+                            <div class="filter-item">
+                                <input type="radio" name="level" id="level02" />
+                                <label for="level02">상위 5%</label>
+                            </div>
+                            <div class="filter-item">
+                                <input type="radio" name="level" id="level03" />
+                                <label for="level03">상위 10%</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="apply-wrap">
+                        <div class="apply-box-wrap">
+                            <div class="apply-box">
+                                <div class="apply-top">
+                                    <span class="level">쉬움</span>
+                                    <strong class="tit">초등사고력 진단평가</strong>
+                                    <a href="javascript:void(0)" class="btn-arrow" data-bs-toggle="modal" data-bs-target="#detailInfo">신청하기</a>
+                                </div>
+                                <div class="apply-cont">
+                                    <div class="txt-wrap">
+                                        <p class="desc">가장 기초가 되는 수학 기본기를 확인합니다.</p>
+                                        <div class="info">
+                                            <span><i class="ri-graduation-cap-line"></i>30문항</span>
+                                            <span><i class="ri-time-line"></i>80분</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="apply-box">
+                                <div class="apply-top">
+                                    <span class="level">어려움</span>
+                                    <strong class="tit">중등진급입학</strong>
+                                    <a href="javascript:void(0)" class="btn-arrow" data-bs-toggle="modal" data-bs-target="#detailInfo">신청하기</a>
+                                </div>
+                                <div class="apply-cont">
+                                    <div class="txt-wrap">
+                                        <p class="desc">중등 입학 전, 현재 내 아이의 수학 실력을 확인합니다.</p>
+                                        <div class="info">
+                                            <span><i class="ri-graduation-cap-line"></i>40문항</span>
+                                            <span><i class="ri-time-line"></i>120분</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="apply-box-wrap">
+                            <div class="apply-box level-01">
+                                <div class="apply-top">
+                                    <span class="level">어려움</span>
+                                    <strong class="tit">초등심화 5</strong>
+                                </div>
+                                <div class="apply-cont">
+                                    <div class="txt-wrap">
+                                        <p class="desc">초등 5학년 전 범위를 평가합니다.</p>
+                                    </div>
+                                    <div class="apply-detail">
+                                        <div class="detail">
+                                            <strong class="tit">초등심화 5-1학기</strong>
+                                            <div class="info">
+                                                <span><i class="ri-graduation-cap-line"></i>40문항</span>
+                                                <span><i class="ri-time-line"></i>120분</span>
+                                            </div>
+                                            <a href="javascript:void(0)" class="btn-arrow" data-bs-toggle="modal" data-bs-target="#detailInfo">신청하기</a>
+                                        </div>
+                                        <div class="detail">
+                                            <strong class="tit">초등심화 5-2학기</strong>
+                                            <div class="info">
+                                                <span><i class="ri-graduation-cap-line"></i>40문항</span>
+                                                <span><i class="ri-time-line"></i>120분</span>
+                                            </div>
+                                            <a href="javascript:void(0)" class="btn-arrow" data-bs-toggle="modal" data-bs-target="#detailInfo">신청하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="apply-box level-02">
+                                <div class="apply-top">
+                                    <span class="level">어려움</span>
+                                    <strong class="tit">초등심화 5</strong>
+                                </div>
+                                <div class="apply-cont">
+                                    <div class="txt-wrap">
+                                        <p class="desc">초등 5학년 전 범위를 평가합니다.</p>
+                                    </div>
+                                    <div class="apply-detail">
+                                        <div class="detail">
+                                            <strong class="tit">초등심화 5-1학기</strong>
+                                            <div class="info">
+                                                <span><i class="ri-graduation-cap-line"></i>40문항</span>
+                                                <span><i class="ri-time-line"></i>120분</span>
+                                            </div>
+                                            <a href="javascript:void(0)" class="btn-arrow" data-bs-toggle="modal" data-bs-target="#detailInfo">신청하기</a>
+                                        </div>
+                                        <div class="detail">
+                                            <strong class="tit">초등심화 5-2학기</strong>
+                                            <div class="info">
+                                                <span><i class="ri-graduation-cap-line"></i>40문항</span>
+                                                <span><i class="ri-time-line"></i>120분</span>
+                                            </div>
+                                            <a href="javascript:void(0)" class="btn-arrow" data-bs-toggle="modal" data-bs-target="#detailInfo">신청하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="apply-box level-03">
+                                <div class="apply-top">
+                                    <span class="level">어려움</span>
+                                    <strong class="tit">초등심화 5</strong>
+                                </div>
+                                <div class="apply-cont">
+                                    <div class="txt-wrap">
+                                        <p class="desc">초등 5학년 전 범위를 평가합니다.</p>
+                                    </div>
+                                    <div class="apply-detail">
+                                        <div class="detail">
+                                            <strong class="tit">초등심화 5-1학기</strong>
+                                            <div class="info">
+                                                <span><i class="ri-graduation-cap-line"></i>40문항</span>
+                                                <span><i class="ri-time-line"></i>120분</span>
+                                            </div>
+                                            <a href="javascript:void(0)" class="btn-arrow" data-bs-toggle="modal" data-bs-target="#detailInfo">신청하기</a>
+                                        </div>
+                                        <div class="detail">
+                                            <strong class="tit">초등심화 5-2학기</strong>
+                                            <div class="info">
+                                                <span><i class="ri-graduation-cap-line"></i>40문항</span>
+                                                <span><i class="ri-time-line"></i>120분</span>
+                                            </div>
+                                            <a href="javascript:void(0)" class="btn-arrow" data-bs-toggle="modal" data-bs-target="#detailInfo">신청하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- e : container -->
+
+        <!-- s : footer -->
+        <footer id="footer">
+            <div class="footer-wrap">
+                <div class="footer-top">
+                    <ul class="footer-nav">
+                        <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#policy">개인정보처리방침</a></li>
+                        <li><a href="">이용약관</a></li>
+                        <li><a href="">마케팅수신동의</a></li>
+                    </ul>
+                    <ul class="footer-link">
+                        <li><a href="https://www.sharkmath.co.kr/" target="_blank" class="ico-shark" title="대치상어수학 홈페이지 새창 열림"><span>대치상어수학 홈페이지</span></a></li>
+                        <li><a href="" target="_blank" class="ico-youtube" title="유튜브 새창 열림"><span>유튜브 바로가기</span></a></li>
+                    </ul>
+                </div>
+                <div class="footer-info">
+                    <p class="address">서울시 강남구 삼성로 155 대치퍼스트빌딩 4층 (06291)</p>
+                    <ul class="info-list">
+                        <li>대표 : 나영환</li>
+                        <li>사업자등록번호 : 170-93-01557</li>
+                        <li>대표번호 : 02-554-0222</li>
+                    </ul>
+                    <p class="copyright">Copyright © Daechi Sharkmath All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <!-- e : footer -->
+
+        <!-- s : panel -->
+        <div id="panel"></div>
+        <!-- e : panel -->
+
+        <!-- s : 진단평가 상세정보 modal -->
+        <div class="modal fade" id="detailInfo">
+            <div class="modal-dialog">
+                <!-- step01 -->
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">01.진단평가 상세정보 확인</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+            
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="ta-c">
+                            <strong class="title">대치상어수학 초등사고력 진단평가</strong>
+                        </div>
+                        <div class="basic-form type-02">
+                            <div class="form-item">
+                                <dl>
+                                    <dt>평가 대상 학년</dt>
+                                    <dd>초등 저학년(1,2,3) 대상</dd>
+                                </dl>
+                                <dl>
+                                    <dt>평가 범위</dt>
+                                    <dd>초등 저학년(1,2,3) 전 범위</dd>
+                                </dl>
+                            </div>
+                            <div class="form-item">
+                                <dl>
+                                    <dt>평가 시간</dt>
+                                    <dd>총 80분</dd>
+                                </dl>
+                                <dl>
+                                    <dt>평가 문항수</dt>
+                                    <dd>30 문항</dd>
+                                </dl>
+                                <dl>
+                                    <dt>평가 난이도</dt>
+                                    <dd>상</dd>
+                                </dl>
+                            </div>
+                            <div class="form-item">
+                                <dl>
+                                    <dt>포함 내용</dt>
+                                    <dd>진단평가 리포트 및 전국 평균 점수 등</dd>
+                                </dl>
+                                <dl>
+                                    <dt>평가지</dt>
+                                    <dd>
+                                        <p>1. 목표 대상 학원의 입학 테스트 통과 여부</p>
+                                        <p>2. 자녀의 취약점 파악 및 개선 영역 확인</p>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="form-item">
+                                <dl>
+                                    <dt>응시 금액</dt>
+                                    <dd>3만원 / 회당</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div><!-- /.modal-body -->
+            
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn blue" onclick="setModalNext(this);">다음</button>
+                    </div>
+                </div>
+
+                <!-- step02 -->
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">02.평가자 선택</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+            
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <p class="title">평가자를 선택해주세요.</p>
+                        <ul class="custom-radio-type02">
+                            <li>
+                                <input type="radio" name="evaluator" id="evaluator01" required />
+                                <label for="evaluator01">
+                                    <div class="info">
+                                        <span>자녀1</span>
+                                        <p class="name">홍길동 5</p>
+                                    </div>
+                                    <i class="ri-checkbox-circle-fill"></i>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" name="evaluator" id="evaluator02" required />
+                                <label for="evaluator02">
+                                    <div class="info">
+                                        <span>자녀2</span>
+                                        <p class="name">김상어 4</p>
+                                    </div>
+                                    <i class="ri-checkbox-circle-fill"></i>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" name="evaluator" id="evaluator03" required />
+                                <label for="evaluator03">
+                                    <div class="info">
+                                        <span>자녀3</span>
+                                        <p class="name">김상어 5</p>
+                                    </div>
+                                    <i class="ri-checkbox-circle-fill"></i>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" name="evaluator" id="evaluator04" required />
+                                <label for="evaluator04">
+                                    <div class="info">
+                                        <span>자녀4</span>
+                                        <p class="name">김상어 6</p>
+                                    </div>
+                                    <i class="ri-checkbox-circle-fill"></i>
+                                </label>
+                            </li>
+                        </ul>
+                        <div class="btn-wrap fx-je mt-50">
+                            <button type="button" class="btn-add" onclick="setModalAddChild(this);">자녀 추가 등록</button>
+                        </div>
+                    </div><!-- /.modal-body -->
+            
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <div class="btn-wrap">
+                            <button type="button" class="btn wp-40" onclick="setModalPrev(this);">이전</button>
+                            <button type="button" class="btn blue wp-60" onclick="setModalNext(this);">다음</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 결제창 -->
+                <div class="modal-content payment">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">02.결제</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+            
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="pay-select">
+                            <strong class="title mb-10">신용/체크카드</strong>
+                            <ul class="custom-radio-type02">
+                                <li class="w-full">
+                                    <input type="radio" name="payMethod" id="creditCard" required />
+                                    <label for="creditCard">신용카드</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pay-info">
+                            <dl>
+                                <dt>결제 금액</dt>
+                                <dd class="price">50,000 원</dd>
+                            </dl>
+                            <dl>
+                                <dt>상품명</dt>
+                                <dd class="product">대치상어수학 초등사고력 진단평가</dd>
+                            </dl>
+                        </div>
+                        <div class="term-box">
+                            <div class="term-top">
+                                <div class="check type-b">
+                                    <input type="checkbox" name="modalTermCheck" id="modalTermCheckAll" />
+                                    <label for="modalTermCheckAll">약관 전체 동의</label>
+                                </div>
+                            </div>
+                            <div class="term-cont">
+                                <div class="check">
+                                    <input type="checkbox" name="modalTermCheck" id="modalTermCheck01" required />
+                                    <label for="modalTermCheck01">이용 안내와 <span class="cl-blue t-line">환불 규정</span>에 동의합니다. <span class="cl-red">[필수]</span></label>
+                                </div>
+                                <div class="check">
+                                    <input type="checkbox" name="modalTermCheck" id="modalTermCheck02" required />
+                                    <label for="modalTermCheck02">이 계정으로 강의를 결제/수강 할 것을 동의합니다. <span class="cl-red">[필수]</span></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /.modal-body -->
+            
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <div class="btn-wrap">
+                            <button type="button" class="btn wp-40" onclick="setModalPrev(this);">이전</button>
+                            <button type="button" class="btn blue wp-60" onclick="location.href='../evaluation/applyComplete.html';">다음</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- e : 진단평가 상세정보 modal -->
+
+        <!-- s : 자녀 추가 등록 modal -->
+        <div class="modal fade" id="addChild">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">자녀(학생)등록</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+            
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="txt-wrap mb-40">
+                            <p class="cl-blue">※ 주의사항</p>
+                            <p class="cl-blue">01. 생성한 자녀 계정으로 시험과 수강 등의 학습을 진행합니다.</p>
+                            <p class="cl-blue">02. 다자녀 등록은 아래 +자녀 추가 등록을 클릭하면 추가 등록을 하실 수 있습니다.</p>
+                        </div>
+                        <div class="basic-form">
+                            <p class="tit"><span class="cl-red">*</span> 필수 입력 사항</p>
+                            <dl>
+                                <dt>자녀 이름 <span class="cl-red">*</span></dt>
+                                <dd>
+                                    <input type="text" class="form-input-01" placeholder="한글만 입력 가능" title="자녀 이름" required />
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>자녀 아이디 <span class="cl-red">*</span></dt>
+                                <dd>
+                                    <div class="input-wrap">
+                                        <input type="text" class="form-input-01" placeholder="영문 또는 영문+숫자조합으로 6~13자리" title="자녀 아이디" required />
+                                        <button type="button" class="btn basic">중복확인</button>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>비밀번호 <span class="cl-red">*</span></dt>
+                                <dd>
+                                    <input type="text" class="form-input-01" placeholder="영문, 숫자, 특수문자 2가지 조합으로 10~13자리" title="비밀번호" required />
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>비밀번호 확인 <span class="cl-red">*</span></dt>
+                                <dd>
+                                    <input type="text" class="form-input-01" placeholder="영문, 숫자, 특수문자 2가지 조합으로 10~13자리" title="비밀번호 확인" required />
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>자녀 생년월일 <span class="cl-red">*</span></dt>
+                                <dd>
+                                    <input type="text" class="form-input-01" placeholder="생년월일 8자리 입력 (YYYY - MM - DD)" title="자녀 생년월일" required />
+                                </dd>
+                            </dl>
+                            <div class="form-group">
+                                <dl class="col-2">
+                                    <dt>지역 <span class="cl-red">*</span></dt>
+                                    <dd>
+                                        <select title="지역 선택" required>
+                                            <option value="">선택</option>
+                                            <option value="">서울</option>
+                                            <option value="">대전</option>
+                                            <option value="">대구</option>
+                                            <option value="">부산</option>
+                                        </select>
+                                    </dd>
+                                </dl>
+                                <dl class="col-2">
+                                    <dt>학년 <span class="cl-red">*</span></dt>
+                                    <dd>
+                                        <select title="학년 선택" required>
+                                            <option value="">선택</option>
+                                            <option value="">1학년</option>
+                                            <option value="">2학년</option>
+                                            <option value="">3학년</option>
+                                            <option value="">4학년</option>
+                                            <option value="">5학년</option>
+                                            <option value="">6학년</option>
+                                        </select>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <dl>
+                                <dt>학교 이름 <span class="cl-red">*</span></dt>
+                                <dd>
+                                    <div class="input-wrap">
+                                        <div class="col-2 mr-10">
+                                            <input type="text" class="form-input-02" placeholder="학교 이름 입력" title="학교 이름" required />
+                                        </div>
+                                        <div class="col-2">
+                                            <select title="학교 선택" required>
+                                                <option value="">선택</option>
+                                                <option value="">초등학교</option>
+                                                <option value="">중학교</option>
+                                                <option value="">고등학교</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="mb-20">
+                                <dt>자녀 성별 <span class="cl-red">*</span></dt>
+                                <dd>
+                                    <ul class="custom-radio">
+                                        <li>
+                                            <input type="radio" name="modalGender01" id="modalMale01" required />
+                                            <label for="modalMale01">남</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="modalGender01" id="modalFemale01" required />
+                                            <label for="modalFemale01">여</label>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <div class="btn-wrap fx-je">
+                                <button type="button" class="btn-add" onclick="setModalAddRegister(this);">자녀 추가 등록</button>
+                                <button type="button" class="btn-delete" onclick="setDeleteRegister(this);" style="display:none;">추가 등록 삭제</button>
+                            </div>
+                        </div>
+                    </div><!-- /.modal-body -->
+            
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <div class="btn-wrap">
+                            <button type="button" class="btn wp-40" onclick="setModalAddChildPrev(this);">이전</button>
+                            <button type="button" class="btn blue wp-60" onclick="setModalAddChildNext(this);">다음</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- e : 자녀 추가 등록 modal -->
+    </div>
+
+    <script>
+        // 자녀 추가 등록 이전 
+        function setModalAddChildPrev(el){
+            $(el).parents('.modal').modal('hide');
+            $('#detailInfo').modal('show').find('.modal-content:nth-child(2)').show().siblings().hide();
+        }
+
+        // 자녀 추가 등록 다음
+        function setModalAddChildNext(el){
+            $(el).parents('.modal').modal('hide');
+            $('#detailInfo').modal('show').find('.modal-content:nth-child(3)').show().siblings().hide();
+        }
+    </script>
+</body>
+</html>

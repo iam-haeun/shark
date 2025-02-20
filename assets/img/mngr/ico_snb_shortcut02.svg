@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55">
+  <g id="그룹_34" data-name="그룹 34" transform="translate(-140 -98)">
+    <circle id="타원_1" data-name="타원 1" cx="27.5" cy="27.5" r="27.5" transform="translate(140 98)" fill="none"/>
+    <g id="headset_mic_black_24dp" transform="translate(149.401 107.1)">
+      <path id="패스_1" data-name="패스 1" d="M0,0H36.8V36.8H0Z" fill="none" opacity="0.1"/>
+      <path id="패스_2" data-name="패스 2" d="M16.8,1A13.8,13.8,0,0,0,3,14.8V25.533a4.594,4.594,0,0,0,4.6,4.6h4.6V17.867H6.067V14.8a10.733,10.733,0,1,1,21.467,0v3.067H21.4V30.133h6.133v1.533H16.8v3.067H26a4.594,4.594,0,0,0,4.6-4.6V14.8A13.8,13.8,0,0,0,16.8,1Z" transform="translate(1.6 0.533)" fill="#041231"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,354 @@
+@charset "utf-8";
+
+.modal-dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 540px;
+  height: calc(100% - 3.5rem); 
+  margin: 1.75rem auto;
+  padding: 0 20px;
+}
+
+.modal-lg {
+  max-width: 840px;
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.modal-title .step {
+  margin-left: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #979797;
+}
+
+.modal-content {
+  min-height: 85%;
+  max-height: 100%;
+  border-radius: 5px;
+}
+
+.modal-header {
+  height: 60px;
+  padding: 0 40px;
+}
+
+.modal-body {
+  overflow-y: auto;
+  padding: 40px;
+}
+
+.modal-body .title {
+  display: block;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.modal-body .cont-wrap {
+  margin: 0 -40px;
+  padding: 40px;
+  background: #fff;
+  border-bottom: 10px solid #f9f9f9;
+}
+
+.modal-body .cont-wrap:first-child {
+  padding-top: 0;
+}
+
+.modal-body .cont-wrap:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.modal-body .basic-form dl + dl {
+  margin-top: 0;
+}
+
+.modal-body dl + dl {
+  margin-top: 20px;
+}
+
+.modal-body dl p {
+  margin: 0;
+}
+
+.modal-body dl ol li + li {
+  margin-top: 15px;
+}
+
+.modal-body dl ol li ol li + li {
+  margin-top: 10px;
+}
+
+.modal-body dl dt {
+  font-weight: 600;
+}
+
+.modal-body > dl > dd > .txt {
+  margin-bottom: 20px;
+}
+
+.modal-footer {
+  justify-content: center;
+  position: relative;
+  padding: 40px;
+  border: 0;
+}
+
+.modal-footer::before {
+  content: '';
+  position: absolute;
+  top: -39px;
+  left: 0;
+  right: 15px;
+  height: 40px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.modal-footer > * {
+  width: 100%;
+  margin: 0;
+}
+
+.modal-footer .btn {
+  width: 100%;
+}
+
+
+/** alert modal **/
+.alert-modal .modal-dialog {
+  max-width: 360px;
+}
+
+.alert-modal .modal-content {
+  min-height: auto;
+}
+
+.alert-modal .modal-content::before {
+  content: '';
+  position: absolute;
+  bottom: calc(100% - 10px);
+  left: calc(50% - 37px);
+  width: 74px;
+  height: 37px;
+  border-radius: 37px 37px 0 0;
+  background: #fff;
+}
+
+.alert-modal .modal-content::after {
+  content: '';
+  position: absolute;
+  top: -40px;
+  left: calc(50% - 30px);
+  width: 60px;
+  height: 60px;
+  background: url(../img/common/ico_megaphone.png) no-repeat center / contain;
+}
+
+.alert-modal .modal-body {
+  padding: 60px 20px 20px;
+  text-align: center;
+}
+
+.alert-modal .modal-body p {
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.alert-modal .modal-body .btn {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+}
+
+/** 결제 **/
+.payment .pay-select {
+  margin-bottom: 40px;
+} 
+
+.payment .pay-select .custom-radio-type02 li input[type=radio] + label {
+  justify-content: center;
+  padding: 15px;
+  font-weight: bold;
+}
+
+.payment .pay-info {
+  margin: 0 -40px;
+  padding: 20px 40px;
+  background: #f9fafb;
+}
+
+.payment .pay-info dl dt {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--gray-color);
+}
+
+.payment .pay-info .price {
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.payment .pay-info .product {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.payment .term-box {
+  margin: 0 -40px;
+  margin-top: 40px;
+  padding: 20px 40px;
+  background: #f9fafb;
+}
+
+.payment .term-top {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.payment .term-top .check {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.payment .term-cont .check {
+  display: block;
+  color: var(--gray-color);
+}
+
+.payment .term-cont .check + .check {
+  margin-top: 7px;
+}
+
+.payment .term-cont .check input[type=checkbox]:checked + label {
+  color:#333;
+}
+
+/** 모의고사 상세정보 **/
+.mock-detail .custom-select .options li .tit {
+  float: left;
+}
+
+.mock-detail .custom-select .options li .tit span {
+  font-size: 14px;
+}
+
+.mock-detail .custom-select .options li [class*='price'] {
+  float: right;
+}
+
+.mock-detail .custom-select .options li .cost {
+  margin-right: 3px;
+  font-size: 12px;
+  color: var(--gray-color);
+  text-decoration: line-through;
+}
+
+.mock-detail .custom-select .options li .sale {
+  margin-right: 5px;
+  font-weight: bold;
+  color: var(--red-color);
+}
+
+.mock-detail .more-list {
+  overflow-y: auto;
+  width: 100%;
+  white-space:nowrap;
+}
+
+.mock-detail .more-list li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.mock-detail .more-list li:last-child {
+  margin-right: 0;
+}
+
+.mock-detail .more-list li .thumb {
+  overflow: hidden;
+  width: 145px;
+  height: 125px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+.mock-detail .more-list li .thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.mock-detail .more-list li .info .tit {
+  font-weight: bold;
+}
+
+.mock-detail .more-list li .info .price-wrap {
+  font-size: 14px;
+}
+
+.mock-detail .more-list li .info .price-wrap .sale {
+  margin-right: 5px;
+  color: var(--red-color);
+}
+
+
+@media screen and (max-width:767px) {
+  .modal-dialog {
+    padding: 0 10px;
+  }
+  .modal-header {
+    padding: 0 20px;
+  }
+  .modal-title {
+    font-size: 16px;
+  }
+  .modal-body {
+    padding: 30px 20px;
+  }
+  .modal-body .title {
+    margin-bottom: 20px; 
+    font-size: 16px;
+  }
+  .modal-body .cont-wrap {
+    padding: 20px;
+    margin: 0 -20px;
+  }
+  .modal-footer {
+    padding: 30px 20px;
+  }
+  .modal-footer::before {
+    top: -29px;
+    height: 30px;
+  }
+
+  /** 결제 **/
+  .payment .pay-select {
+    margin-bottom: 30px;
+  }
+  .payment .pay-select .custom-radio-type02 li input[type=radio] + label {
+    padding: 10px;
+  }
+  .payment .pay-info {
+    margin: 0 -20px;
+    padding: 20px;
+  }
+  .payment .pay-info .price {
+    font-size: 20px;
+  }
+  .payment .term-box {
+    margin: 0 -20px;
+    margin-top: 30px;
+    padding: 20px;
+  }
+  .payment .term-top .check {
+    font-size: 15px;
+  }
+}

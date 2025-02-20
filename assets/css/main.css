@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+/** 상단 배너 **/
+.top-banner .slide-item {display:block; height:180px; background-repeat:no-repeat; background-position:center;}
+.top-banner .swiper-pagination-bullets {bottom:20px;}
+.top-banner .swiper-pagination-bullet {opacity:.7; background:#fff;}
+.top-banner .swiper-pagination-bullet-active {width:30px; border-radius:30px;}
+
+/** 유튜브 **/
+.section-02 {padding:80px 0;}
+.sc-youtube .txt-wrap {margin-bottom:40px; text-align:center;}
+.sc-youtube .txt-wrap .tit {margin-bottom:15px; font-weight:800; font-size:32px;}
+.sc-youtube .txt-wrap .desc {font-weight:700; font-size:24px;}
+.sc-youtube .youtube-wrap {max-width:800px; margin:0 auto;}
+.sc-youtube .youtube-box {position:relative; height:0; padding-bottom:56.25%;}
+.sc-youtube .youtube-box iframe {position:absolute; top:0; left:0; width:100%; height:100%;}
+
+/** 띠 배너 **/
+.sc-banner {position:relative; width:100%; height:292px; background:url(../img/main/bg_banner.png) no-repeat center / cover; text-align:center;}
+.sc-banner .txt-wrap {position:absolute; bottom:40px; left:0; right:0; max-width:700px; width:100%; margin:0 auto;}
+.sc-banner .txt-wrap p {margin-bottom:30px; font-size:18px; color:#fff;}
+.sc-banner .txt-wrap p strong {display:block; font-size:32px;}
+.sc-banner .txt-wrap .btn {position:relative; width:100%;}
+.sc-banner .txt-wrap .btn::after {content:''; position:absolute; bottom:-15px; right:20px; width:116px; height:123px; background:url(../img/main/obj_banner.png) no-repeat center / cover;}
+.sc-banner .txt-wrap .btn:hover::after,
+.sc-banner .txt-wrap .btn:active::after,
+.sc-banner .txt-wrap .btn:focus::after {animation:bounce 1s ease infinite;}
+
+@keyframes bounce {
+    0% {transform:translateY(0);}
+    20% {transform:translateY(5px);}
+    40% {transform:translateY(0);}
+    60% {transform:translateY(3px);}
+    100% {transform:translateY(0);}
+}
+
+/** 원장 소개 **/
+.section-04 {padding:100px 0 80px;}
+.sc-intro {display:flex; justify-content:space-between; padding:40px; background:#f8f8f8 url(../img/main/bg_intro.png) no-repeat 420px 35px;}
+.sc-intro .txt-wrap p {font-weight:500; font-size:24px; text-shadow:1px 1px 2px #fff;}
+.sc-intro .txt-wrap p + p {margin-top:20px;}
+.sc-intro .hashtag li {min-width:320px; height:50px; padding:0 20px; border-radius:25px; background:var(--point-color); font-weight:bold; font-size:24px; line-height:50px; color:#fff; text-align:center;}
+.sc-intro .hashtag li:not(:last-child) {margin-bottom:20px;}
+
+/** 슬로건 **/
+.sc-slogan {display:flex; justify-content:space-around; padding:60px 0; border-top:1px solid var(--point-color);}
+.sc-slogan .txt-wrap {padding:0 15px;}
+.sc-slogan .txt-wrap span {font-weight:500; font-size:20px; color:var(--point-color); text-transform:uppercase;}
+.sc-slogan .txt-wrap p {font-weight:bold; font-size:28px; line-height:1.3;}
+.sc-slogan .txt-wrap p em {display:inline-block; position:relative;}
+.sc-slogan .txt-wrap p em::before {content:''; position:absolute; top:50%; left:50%; z-index:-1; width:32px; height:32px; border-radius:50%; background:rgba(0,75,242,.12); transform:translate(-50%,-50%);}
+
+/** 바로가기 **/
+.section-06 {padding:60px 0 100px;}
+.sc-shortcut .sc-wrap {display:flex; margin-bottom:120px;}
+.sc-shortcut .sc-wrap:last-child {margin-bottom:0;}
+.sc-shortcut .sc-wrap .l-con {width:40%;}
+.sc-shortcut .sc-wrap .r-con {width:60%; margin-left:150px;}
+.sc-shortcut .tit-wrap {margin-bottom:20px;}
+.sc-shortcut .tit-wrap span {font-weight:500; color:var(--point-color); text-transform:uppercase;}
+.sc-shortcut .tit-wrap .tit {font-size:28px; line-height:1.3;}
+.sc-shortcut .txt-wrap {font-size:20px;}
+.sc-shortcut img {display:block; width:100%; margin-bottom:15px;}
+
+
+/** 1024px 시작 **/
+@media screen and (max-width:1024px) {
+    /** 상단 배너 **/
+    .top-banner .slide-item {height:95px; background-size:cover;}
+    .top-banner .swiper-pagination-bullets {bottom:5px;}
+    .top-banner .swiper-pagination-bullet {width:6px; height:6px;}
+    .top-banner .swiper-pagination-bullet-active {width:20px;}
+
+    /** 유튜브 **/
+    .sc-youtube .txt-wrap .tit {margin-bottom:5px; font-size:26px;}
+    .sc-youtube .txt-wrap .desc {font-size:20px;}
+
+    /** 띠 배너 **/
+    .sc-banner {height:192px;}
+    .sc-banner .txt-wrap {bottom:23px; max-width:500px; padding:0 20px;}
+    .sc-banner .txt-wrap p {margin-bottom:15px; font-size:14px;}
+    .sc-banner .txt-wrap p strong {font-size:26px;}
+    .sc-banner .txt-wrap .btn {height:40px; font-size:18px; line-height:40px;}
+    .sc-banner .txt-wrap .btn::after {bottom:0; width:65px; height:69px;}
+
+    /** 원장 소개 **/
+    .section-04 {padding:0 0 80px;}
+    .sc-intro {flex-direction:column; padding:0; background:none;}
+    .sc-intro .txt-wrap {margin:0 -90px 40px; padding:40px 90px; background:#f8f8f8 url(../img/main/bg_intro.png) no-repeat right 90px top 50px / contain;}
+    .sc-intro .txt-wrap p {font-size:20px;}
+    .sc-intro .hashtag {display:flex; flex-wrap:wrap;}
+    .sc-intro .hashtag li {min-width:250px; height:38px; font-size:18px; line-height:38px;}
+    .sc-intro .hashtag li:not(:last-child) {margin-right:10px; margin-bottom:10px;}
+
+    /** 슬로건 **/
+    .sc-slogan .txt-wrap span {font-size:16px;}
+    .sc-slogan .txt-wrap p {font-size:20px;}
+
+    /** 바로가기 **/
+    .sc-shortcut .sc-wrap {flex-direction:column; margin-bottom:80px;}
+    .sc-shortcut .sc-wrap .l-con {width:100%;} 
+    .sc-shortcut .sc-wrap .r-con {width:100%; margin-left:0;}
+    .sc-shortcut .tit-wrap {margin-bottom:10px;}
+    .sc-shortcut .tit-wrap span {font-size:14px;}
+    .sc-shortcut .tit-wrap .tit {font-size:24px;}
+    .sc-shortcut .txt-wrap {margin-bottom:30px; font-size:18px;}
+}
+/** 1024px 끝 **/
+
+/** 767px 시작 **/
+@media screen and (max-width:767px) {
+    /** 유튜브 **/
+    .section-02 {padding:40px 0;}
+    .sc-youtube .txt-wrap .tit {font-size:19px;}
+    .sc-youtube .txt-wrap .desc {font-size:16px;}
+
+    /** 띠 배너 **/
+    .sc-banner .txt-wrap p strong {font-size:18px;}
+    .sc-banner .txt-wrap .btn {font-size:16px;}
+
+    /** 원장 소개 **/
+    .section-04 {padding:0 0 40px;}
+    .sc-intro .txt-wrap {margin:0 -20px 40px; padding:40px 20px; background-position:right top 20px;}
+    .sc-intro .txt-wrap p {font-size:16px;}
+    .sc-intro .hashtag li {min-width:auto; font-size:15px;}
+
+    /** 슬로건 **/
+    .sc-slogan {flex-direction:column; padding:40px 0;}
+    .sc-slogan .txt-wrap {padding:0;}
+    .sc-slogan .txt-wrap:not(:last-child) {margin-bottom:20px;}
+
+    /** 바로가기 **/
+    .section-06 {padding:0 0 50px;}
+    .sc-shortcut .sc-wrap {margin-bottom:40px;}
+    .sc-shortcut .tit-wrap span {font-size:12px;}
+    .sc-shortcut .tit-wrap .tit {font-size:18px;}
+    .sc-shortcut .txt-wrap {margin-bottom:20px; font-size:15px;}
+}
+/** 767px 끝 **/
+
+/** 500px 시작 **/
+@media screen and (max-width:500px) {
+    /** 유튜브 **/
+    .section-02 {padding:40px 0 0;}
+}
+/** 500px 끝 **/
+
+/** 480px 시작 **/
+@media screen and (max-width:480px) {
+    /** 띠 배너 **/
+    .sc-banner .txt-wrap .btn::after {content:none;}
+
+    /** 원장 소개 **/
+    .sc-intro .txt-wrap {background:#f8f8f8;}
+}
+/** 480px 끝 **/

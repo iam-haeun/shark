@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
+    <title>대치상어수학 관리자 > FAQ</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../../assets/img/common/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/remixicon.css" />
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/swiper.css" />
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/default.css" />
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/mngr/common.css" />
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/mngr/style.css" />
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/mngr/jquery-ui-1.13.2.css" />
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/mngr/date-custom.css" />
+    <script type="text/javascript" src="../../../assets/js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../../assets/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../../assets/js/swiper.min.js"></script>
+    <script type="text/javascript" src="../../../assets/js/mngr/common.js"></script>
+    <!-- ie css 변수적용 -->
+    <script type="text/javascript" src="https://unpkg.com/css-vars-ponyfill@2/dist/css-vars-ponyfill.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- s : snb -->
+        <aside id="snb">
+            <div class="cont-head">
+                <button type="button" class="btn-menu">전체 메뉴</button>
+            </div>
+            <div class="cont-body">
+                <div class="top-cont">
+                    <ul class="shortcut-list">
+                        <li><a href="../main/index.html">홈페이지</a></li>
+                        <li><a href=""><span class="num">123</span>상담요청</a></li>
+                        <li><a href=""><span class="num">1</span>1:1 문의</a></li>
+                    </ul>
+                    <p><span class="cl-blue t-line">관리자</span>님, 반갑습니다.</p>
+                    <ul class="util">
+                        <li><a href="../login/login.html">로그아웃</a></li>
+                        <li><a href="">내 정보</a></li>
+                    </ul>
+                </div>
+                <nav class="snb-menu">
+                    <ul class="menu-08">
+                        <li><a href="faq.html">FAQ관리</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="cont-foot">
+                <h1 class="logo">
+                    <a href="../main/index.html"><span class="blind">대치상어수학 ONLINE</span></a>
+                </h1>
+            </div>
+        </aside>
+        <!-- e : snb -->
+
+        <!-- s : container -->
+        <main id="container">
+            <!-- s : header -->
+            <header id="header">
+                <nav class="gnb swiper-container">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide"><a href="../member/student.html"><span>회원관리</span></a></li>
+                        <li class="swiper-slide"><a href="../service/evaluation.html"><span>서비스관리</span></a></li>
+                        <li class="swiper-slide"><a href="../learning/dashboard.html"><span>학습관리</span></a></li>
+                        <li class="swiper-slide"><a href="../calculate/breakdown.html"><span>정산관리</span></a></li>
+                        <li class="swiper-slide"><a href="../stats/join.html"><span>통계관리</span></a></li>
+                        <li class="swiper-slide"><a href="../customer/inquiry.html"><span>고객운영관리</span></a></li>
+                        <li class="swiper-slide on"><a href="../faq/faq.html"><span>FAQ</span></a></li>
+                        <li class="swiper-slide"><a href="../home/popup.html"><span>HOME관리</span></a></li>
+                        <li class="swiper-slide"><a href=""><span>계정 관리</span></a></li>
+                    </ul>
+                    <div class="swiper-scrollbar"></div>
+                </nav>
+            </header>
+            <!-- e : header -->
+
+            <!-- s : content -->
+            <div id="content">
+                <!-- s : cont-head -->
+                <div class="cont-head">
+                    <div class="tit-wrap menu-08">
+                        <h2 class="tit">FAQ 관리</h2>
+                        <div class="breadcrumb">
+                            <ul>
+                                <li><a href="../main/index.html">HOME</a></li>
+                                <li><a href="../faq/faq.html">FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <p>FAQ 카테고리 및 내용을 등록 및 수정할 수 있습니다.</p>
+                    </div>
+                </div>
+                <!-- e : cont-head -->
+
+                <div class="cont-wrap">
+                    <div class="btn-wrap">
+                        <a href="../faq/category.html" class="btn skyblue" title="카테고리 관리로 이동"><i class="ri-menu-add-line"></i>카테고리 관리</a>
+                        <a href="../faq/faqWrite.html" class="btn basic" title="FAQ 등록하기"><i class="ri-add-line"></i>FAQ 등록</a>
+                    </div>
+                    <div class="board-search">
+                        <select class="type-sm" title="카테고리 선택">
+                            <option value="">전체 카테고리</option>
+                            <option value="">진단평가 문의</option>
+                            <option value="">모의고사 문의</option>
+                            <option value="">수업 문의</option>
+                            <option value="">서비스 이용 문의</option>
+                            <option value="">환불 문의</option>
+                            <option value="">상담신청 문의</option>
+                            <option value="">기타 문의</option>
+                        </select>
+                    </div>
+                    <div class="board-list">
+                        <table class="list-tbl">
+                            <caption>FAQ 리스트</caption>
+                            <colgroup>
+                                <col />
+                                <col />
+                                <col style="width:40%;" />
+                                <col />
+                                <col />
+                                <col />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">순서변경</th>
+                                    <th scope="col">카테고리</th>
+                                    <th scope="col">질문</th>
+                                    <th scope="col">등록일</th>
+                                    <th scope="col">삭제</th>
+                                    <th scope="col">상태</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="btn-wrap">
+                                            <button type="button" class="btn-order" title="위로 이동"><i class="ri-arrow-up-s-line"></i></button>
+                                            <button type="button" class="btn-order" title="아래로 이동"><i class="ri-arrow-down-s-line"></i></button>
+                                        </div>
+                                    </td>
+                                    <td>진단평가</td>
+                                    <td class="tit">FAQ 질문입니다. FAQ 질문입니다. FAQ 질문입니다. FAQ 질문입니다. FAQ 질문입니다. FAQ 질문입니다. FAQ 질문입니다. FAQ 질문입니다. FAQ 질문입니다. FAQ 질문입니다.</td>
+                                    <td>2023-12-22</td>
+                                    <td><button type="button" class="btn-delete">삭제</button></td>
+                                    <td>
+                                        <div class="check">
+                                            <input type="checkbox" name="active" id="active01" checked />
+                                            <label for="active01">활성</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="btn-wrap">
+                                            <button type="button" class="btn-order" title="위로 이동"><i class="ri-arrow-up-s-line"></i></button>
+                                            <button type="button" class="btn-order" title="아래로 이동"><i class="ri-arrow-down-s-line"></i></button>
+                                        </div>
+                                    </td>
+                                    <td>기타 문의</td>
+                                    <td class="tit">FAQ 질문입니다. FAQ 질문입니다.</td>
+                                    <td>2023-12-22</td>
+                                    <td><button type="button" class="btn-delete">삭제</button></td>
+                                    <td>
+                                        <div class="check">
+                                            <input type="checkbox" name="active" id="active02" />
+                                            <label for="active02">활성</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="btn-wrap">
+                                            <button type="button" class="btn-order" title="위로 이동"><i class="ri-arrow-up-s-line"></i></button>
+                                            <button type="button" class="btn-order" title="아래로 이동"><i class="ri-arrow-down-s-line"></i></button>
+                                        </div>
+                                    </td>
+                                    <td>수업 문의</td>
+                                    <td class="tit">FAQ 질문입니다. FAQ 질문입니다.</td>
+                                    <td>2023-12-22</td>
+                                    <td><button type="button" class="btn-delete">삭제</button></td>
+                                    <td>
+                                        <div class="check">
+                                            <input type="checkbox" name="active" id="active03" />
+                                            <label for="active03">활성</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="btn-wrap">
+                                            <button type="button" class="btn-order" title="위로 이동"><i class="ri-arrow-up-s-line"></i></button>
+                                            <button type="button" class="btn-order" title="아래로 이동"><i class="ri-arrow-down-s-line"></i></button>
+                                        </div>
+                                    </td>
+                                    <td>상담신청</td>
+                                    <td class="tit">FAQ 질문입니다. FAQ 질문입니다. FAQ 질문입니다.</td>
+                                    <td>2023-12-22</td>
+                                    <td><button type="button" class="btn-delete">삭제</button></td>
+                                    <td>
+                                        <div class="check">
+                                            <input type="checkbox" name="active" id="active04" checked />
+                                            <label for="active04">활성</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="mt-10 fs-14 cl-gray ta-r">※ FAQ 게시물이 ‘활성’ 상태인 경우에만 사이트에 노출됩니다.</p>
+                    <div class="pagination">
+                        <a href="#none" class="control first"><span class="blind">맨 처음 페이지</span></a>
+                        <a href="#none" class="control prev"><span class="blind">이전 페이지</span></a>
+                        <a href="#none" class="on"><span class="blind">현재 페이지</span>1</a>
+                        <a href="#none">2</a>
+                        <a href="#none">3</a>
+                        <a href="#none">4</a>
+                        <a href="#none">5</a>
+                        <a href="#none" class="control next"><span class="blind">다음 페이지</span></a>
+                        <a href="#none" class="control last"><span class="blind">맨 끝 페이지</span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- e : content -->
+        </main>
+        <!-- e : container -->
+    </div>
+</body>
+</html>

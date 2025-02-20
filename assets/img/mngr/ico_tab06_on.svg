@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="패스_71" data-name="패스 71" d="M858.127,248v9.343h-9.252v8.99h18.417V248Z" transform="translate(-848.875 -248)" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="그룹_1409" data-name="그룹 1409" transform="translate(-188 -705)">
+    <rect id="사각형_600" data-name="사각형 600" width="24" height="24" transform="translate(188 705)" fill="rgba(255,255,255,0)"/>
+    <circle id="타원_41" data-name="타원 41" cx="9" cy="9" r="9" transform="translate(191 708)" fill="#fff"/>
+    <path id="타원_41_-_윤곽선" data-name="타원 41 - 윤곽선" d="M9,4a5,5,0,1,0,5,5A5.006,5.006,0,0,0,9,4M9,0A9,9,0,1,1,0,9,9,9,0,0,1,9,0Z" transform="translate(191 708)" fill="#afafaf"/>
+    <g id="그룹_1279" data-name="그룹 1279" transform="translate(190.917 707.667)">
+      <g id="마스크_그룹_48" data-name="마스크 그룹 48" clip-path="url(#clip-path)">
+        <ellipse id="타원_42" data-name="타원 42" cx="8.988" cy="8.99" rx="8.988" ry="8.99" transform="translate(0.088 0.353)" fill="#fff"/>
+        <path id="타원_42_-_윤곽선" data-name="타원 42 - 윤곽선" d="M8.988,4a4.99,4.99,0,1,0,4.988,4.99A4.995,4.995,0,0,0,8.988,4m0-4A8.99,8.99,0,1,1,0,8.99,8.989,8.989,0,0,1,8.988,0Z" transform="translate(0.088 0.353)" fill="#041231"/>
+      </g>
+    </g>
+  </g>
+</svg>

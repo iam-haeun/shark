@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <g id="그룹_1199" data-name="그룹 1199" transform="translate(-550.5 -212)">
+    <g id="Icon_feather-clock" data-name="Icon feather-clock" transform="translate(548.5 210)">
+      <path id="패스_31" data-name="패스 31" d="M13,2a11,11,0,0,1,7.778,18.778A11,11,0,0,1,5.222,5.222,10.928,10.928,0,0,1,13,2Zm0,20a9,9,0,1,0-9-9A9.01,9.01,0,0,0,13,22Z" fill="#979797"/>
+      <path id="패스_32" data-name="패스 32" d="M22,18a1,1,0,0,1-.446-.106l-4-2A1,1,0,0,1,17,15V9a1,1,0,0,1,2,0v5.382l3.447,1.724A1,1,0,0,1,22,18Z" transform="translate(-5 -2)" fill="#979797"/>
+    </g>
+    <rect id="사각형_586" data-name="사각형 586" width="22" height="22" transform="translate(550.5 212)" fill="none"/>
+  </g>
+</svg>

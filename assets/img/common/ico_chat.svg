@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <g id="그룹_1202" data-name="그룹 1202" transform="translate(-830 -20)">
+    <g id="Icon_ionic-ios-chatboxes" data-name="Icon ionic-ios-chatboxes" transform="translate(827.776 17.774)">
+      <path id="패스_62" data-name="패스 62" d="M21.489,11.981H13.124a1.44,1.44,0,0,0-1.438,1.438v5.824a1.437,1.437,0,0,0,1.438,1.434H17.91a.412.412,0,0,1,.287.121l2.378,2.193c.132.128.351.075.351-.109v-1.91c0-.226.143-.3.37-.3h.038a1.571,1.571,0,0,0,1.589-1.434v-5.82A1.432,1.432,0,0,0,21.489,11.981Z" transform="translate(-3.849 -3.986)" fill="#979797"/>
+      <path id="패스_63" data-name="패스 63" d="M8.146,7.07h6.7V4.606a1.231,1.231,0,0,0-1.231-1.231H4.606A1.231,1.231,0,0,0,3.375,4.606v6.236a1.231,1.231,0,0,0,1.231,1.231H6.912V8.3A1.236,1.236,0,0,1,8.146,7.07Z" transform="translate(0 0)" fill="#979797"/>
+    </g>
+    <g id="그룹_1201" data-name="그룹 1201" transform="translate(2 -30)">
+      <rect id="사각형_586" data-name="사각형 586" width="18" height="18" transform="translate(828 50)" fill="none"/>
+    </g>
+  </g>
+</svg>

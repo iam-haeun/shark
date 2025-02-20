@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="그룹_1270" data-name="그룹 1270" transform="translate(-459.5 -244.5)">
+    <rect id="사각형_598" data-name="사각형 598" width="24" height="24" transform="translate(459.5 244.5)" fill="rgba(255,255,255,0)"/>
+    <g id="그룹_1265" data-name="그룹 1265" transform="translate(465.364 247.795)">
+      <g id="Icon_ionic-ios-document" data-name="Icon ionic-ios-document" transform="translate(0)">
+        <path id="패스_69" data-name="패스 69" d="M21.334,7.755h3.506a.191.191,0,0,0,.193-.193h0a1.14,1.14,0,0,0-.412-.882L21.68,4.23a1.237,1.237,0,0,0-.794-.285h0a.284.284,0,0,0-.285.285V7.023A.732.732,0,0,0,21.334,7.755Z" transform="translate(-13.321 -3.941)" fill="#afafaf"/>
+        <path id="패스_70" data-name="패스 70" d="M13.592,7.019V3.938H8.545A1.236,1.236,0,0,0,7.312,5.17V18.114a1.236,1.236,0,0,0,1.233,1.233h9.246a1.236,1.236,0,0,0,1.233-1.233V8.753h-3.7A1.736,1.736,0,0,1,13.592,7.019Z" transform="translate(-7.312 -3.938)" fill="#afafaf"/>
+      </g>
+      <path id="Icon_feather-check" data-name="Icon feather-check" d="M8.167,15.915a1,1,0,0,1-.707-.293L5.293,13.454A1,1,0,0,1,6.707,12.04l1.472,1.472,2.783-2.694a1,1,0,1,1,1.391,1.437l-3.49,3.379A1,1,0,0,1,8.167,15.915Z" transform="translate(-2.973 -3.375)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
